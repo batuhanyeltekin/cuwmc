@@ -46,10 +46,10 @@ export default function Navbar() {
           {/* Social Media Buttons */}
           <div className="hidden md:flex items-center space-x-4">
             <a href="#" className="social-btn">
-              <FaLinkedin className="w-5 h-5" />
+              <FaLinkedin href="https://www.linkedin.com/company/cuwmc/" className="w-5 h-5" />
             </a>
             <a href="#" className="social-btn">
-              <FaInstagram className="w-5 h-5" />
+              <FaInstagram href="https://www.instagram.com/cuwmc/" className="w-5 h-5" />
             </a>
           </div>
 

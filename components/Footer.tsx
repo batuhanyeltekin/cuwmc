@@ -28,11 +28,7 @@ export default function Footer() {
                   About
                 </a>
               </li>
-              <li>
-                <a href="#board" className="text-gray-300 hover:text-cuwmc-secondary transition-colors">
-                  Board
-                </a>
-              </li>
+              
               <li>
                 <a href="/eboard" className="text-gray-300 hover:text-cuwmc-secondary transition-colors">
                   E-Board
@@ -66,16 +62,16 @@ export default function Footer() {
                 href="#" 
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-cuwmc-secondary hover:text-cuwmc-primary transition-all duration-300"
               >
-                <FaLinkedin className="w-5 h-5" />
+                <FaLinkedin href="https://www.linkedin.com/company/cuwmc/" className="w-5 h-5" />
               </a>
               <a 
                 href="#" 
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-cuwmc-secondary hover:text-cuwmc-primary transition-all duration-300"
               >
-                <FaInstagram className="w-5 h-5" />
+                <FaInstagram href="https://www.instagram.com/cuwmc/" className="w-5 h-5" />
               </a>
               <a 
-                href="mailto:contact@cuwmc.com" 
+                href="mailto:ugradwealthmanagement@columbia.edu" 
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-cuwmc-secondary hover:text-cuwmc-primary transition-all duration-300"
               >
                 <FaEnvelope className="w-5 h-5" />
