@@ -44,9 +44,9 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#divisions" className="text-gray-300 hover:text-cuwmc-secondary transition-colors">
-                  Divisions
-                </a>
+                              <a href="/divisions" className="text-gray-300 hover:text-cuwmc-secondary transition-colors">
+                Divisions
+              </a>
               </li>
               <li>
                 <a href="#recruitment" className="text-gray-300 hover:text-cuwmc-secondary transition-colors">

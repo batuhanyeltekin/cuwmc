@@ -37,8 +37,8 @@ export default function Navbar() {
             <div className="ml-10 flex items-baseline space-x-8">
               <a href="#about" className="nav-link">About</a>
               <a href="/eboard" className="nav-link">E-Board</a>
-              <a href="#programs" className="nav-link">Programs</a>
-              <a href="#divisions" className="nav-link">Divisions</a>
+              <a href="/programs" className="nav-link">Programs</a>
+              <a href="/divisions" className="nav-link">Divisions</a>
               <a href="#recruitment" className="nav-link">Recruitment</a>
             </div>
           </div>
