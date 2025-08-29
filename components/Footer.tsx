@@ -19,7 +19,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-cuwmc-secondary text-lg font-semibold mb-4">
+            <h4 className="text-white text-lg font-semibold mb-4">
               Quick Links
             </h4>
             <ul className="space-y-2">
@@ -45,16 +45,16 @@ export default function Footer() {
               </a>
               </li>
               <li>
-                <a href="#recruitment" className="text-gray-300 hover:text-cuwmc-secondary transition-colors">
-                  Recruitment
-                </a>
+                              <a href="/recruitment" className="text-gray-300 hover:text-cuwmc-secondary transition-colors">
+                Recruitment
+              </a>
               </li>
             </ul>
           </div>
 
           {/* Social Media */}
           <div>
-            <h4 className="text-cuwmc-secondary text-lg font-semibold mb-4">
+            <h4 className="text-white text-lg font-semibold mb-4">
               Connect With Us
             </h4>
             <div className="flex space-x-4">

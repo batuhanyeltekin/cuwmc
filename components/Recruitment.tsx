@@ -45,7 +45,7 @@ export default function Recruitment() {
               Connect with our members and learn more about CUWMC
             </p>
             <button 
-              onClick={() => window.open('/coffee-chats', '_blank')}
+              onClick={() => window.open('/recruitment', '_blank')}
               className="bg-cuwmc-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-cuwmc-primary/90 transition-all duration-300 hover:-translate-y-1 text-lg"
             >
               Schedule Coffee Chat

@@ -162,42 +162,17 @@ export default function About() {
           </div>
         </div>
         
-        {/* Moving Carousel - Full Screen Width with Seamless Infinite Loop */}
-        <div className="relative w-screen overflow-hidden -mx-4 sm:-mx-6 lg:-mx-8">
-          <div className="flex animate-scroll-fast">
-            {/* First set of logos */}
-            <div className="flex space-x-20 items-center min-w-max">
-              <img src="/assets/imgs/company_logos/barclays-3-e1748366367942.png" alt="Barclays" className="h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0" />
-              <img src="/assets/imgs/company_logos/BlackRock_wordmark.svg.png" alt="BlackRock" className="h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0" />
-              <img src="/assets/imgs/company_logos/Citi.svg.png" alt="Citi" className="h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0" />
-              <img src="/assets/imgs/company_logos/gs.png" alt="Goldman Sachs" className="h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0" />
-              <img src="/assets/imgs/company_logos/HSBC_Logo_2018.png" alt="HSBC" className="h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0" />
-              <img src="/assets/imgs/company_logos/jpm.png" alt="JPMorgan Chase" className="h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0" />
-              <img src="/assets/imgs/company_logos/Morgan_Stanley_Logo_1.svg" alt="Morgan Stanley" className="h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0" />
-              <img src="/assets/imgs/company_logos/ubs.png" alt="UBS" className="h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0" />
-            </div>
-            {/* Second set for seamless loop */}
-            <div className="flex space-x-20 items-center min-w-max">
-              <img src="/assets/imgs/company_logos/barclays-3-e1748366367942.png" alt="Barclays" className="h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0" />
-              <img src="/assets/imgs/company_logos/BlackRock_wordmark.svg.png" alt="BlackRock" className="h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0" />
-              <img src="/assets/imgs/company_logos/Citi.svg.png" alt="Citi" className="h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0" />
-              <img src="/assets/imgs/company_logos/gs.png" alt="Goldman Sachs" className="h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0" />
-              <img src="/assets/imgs/company_logos/HSBC_Logo_2018.png" alt="HSBC" className="h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0" />
-              <img src="/assets/imgs/company_logos/jpm.png" alt="JPMorgan Chase" className="h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0" />
-              <img src="/assets/imgs/company_logos/Morgan_Stanley_Logo_1.svg" alt="Morgan Stanley" className="h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0" />
-              <img src="/assets/imgs/company_logos/ubs.png" alt="UBS" className="h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0" />
-            </div>
-            {/* Third set for seamless loop */}
-            <div className="flex space-x-20 items-center min-w-max">
-              <img src="/assets/imgs/company_logos/barclays-3-e1748366367942.png" alt="Barclays" className="h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0" />
-              <img src="/assets/imgs/company_logos/BlackRock_wordmark.svg.png" alt="BlackRock" className="h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0" />
-              <img src="/assets/imgs/company_logos/Citi.svg.png" alt="Citi" className="h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0" />
-              <img src="/assets/imgs/company_logos/gs.png" alt="Goldman Sachs" className="h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0" />
-              <img src="/assets/imgs/company_logos/HSBC_Logo_2018.png" alt="HSBC" className="h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0" />
-              <img src="/assets/imgs/company_logos/jpm.png" alt="JPMorgan Chase" className="h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0" />
-              <img src="/assets/imgs/company_logos/Morgan_Stanley_Logo_1.svg" alt="Morgan Stanley" className="h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0" />
-              <img src="/assets/imgs/company_logos/ubs.png" alt="UBS" className="h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0" />
-            </div>
+                {/* Static Logo Display */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 items-center">
+            <img src="/assets/imgs/company_logos/barclays-3-e1748366367942.png" alt="Barclays" style={{ height: '160px', width: 'auto' }} className="object-contain" />
+            <img src="/assets/imgs/company_logos/BlackRock_wordmark.svg.png" alt="BlackRock" style={{ height: '160px', width: 'auto' }} className="object-contain" />
+            <img src="/assets/imgs/company_logos/Citi.svg.png" alt="Citi" style={{ height: '80px', width: 'auto' }} className="object-contain" />
+            <img src="/assets/imgs/company_logos/gs.png" alt="Goldman Sachs" style={{ height: '160px', width: 'auto' }} className="object-contain" />
+            <img src="/assets/imgs/company_logos/HSBC_Logo_2018.png" alt="HSBC" style={{ height: '160px', width: 'auto' }} className="object-contain" />
+            <img src="/assets/imgs/company_logos/jpm.png" alt="JPMorgan Chase" style={{ height: '160px', width: 'auto' }} className="object-contain" />
+            <img src="/assets/imgs/company_logos/Morgan_Stanley_Logo_1.svg" alt="Morgan Stanley" style={{ height: '160px', width: 'auto' }} className="object-contain" />
+            <img src="/assets/imgs/company_logos/ubs.png" alt="UBS" style={{ height: '160px', width: 'auto' }} className="object-contain" />
           </div>
         </div>
       </div>

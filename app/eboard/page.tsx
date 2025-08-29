@@ -117,7 +117,7 @@ export default function EBoardPage() {
                   <h3 className="text-xl font-bold text-cuwmc-primary mb-2 font-garamond">
                     {member.name}
                   </h3>
-                  <p className="text-cuwmc-secondary font-semibold mb-3 font-garamond">
+                  <p className="text-cuwmc-primary font-semibold mb-3 font-garamond">
                     {member.role}
                   </p>
                   <p className="text-gray-600 text-sm leading-relaxed font-garamond">

@@ -39,7 +39,7 @@ export default function Navbar() {
               <a href="/eboard" className="nav-link">E-Board</a>
               <a href="/programs" className="nav-link">Programs</a>
               <a href="/divisions" className="nav-link">Divisions</a>
-              <a href="#recruitment" className="nav-link">Recruitment</a>
+              <a href="/recruitment" className="nav-link">Recruitment</a>
             </div>
           </div>
 

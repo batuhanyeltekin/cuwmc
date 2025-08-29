@@ -115,14 +115,14 @@ export default function ProgramsPage() {
                   <p className="text-gray-700 leading-relaxed mb-4 font-garamond">
                     {program.content}
                   </p>
-                  {program.hasLink && (
-                    <a
-                      href={program.linkUrl}
-                      className="inline-block bg-cuwmc-secondary text-white px-6 py-3 rounded-lg font-semibold hover:bg-cuwmc-secondary/90 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                    >
-                      {program.linkText}
-                    </a>
-                  )}
+                                       {program.hasLink && (
+                       <a
+                         href={program.linkUrl}
+                         className="inline-block bg-cuwmc-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-cuwmc-primary/90 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                       >
+                         {program.linkText}
+                       </a>
+                     )}
                 </div>
               </div>
             ))}

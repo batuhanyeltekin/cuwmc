@@ -104,7 +104,7 @@ export default function DivisionsPage() {
             </p>
             <Link 
               href="/recruitment"
-              className="inline-block bg-cuwmc-secondary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-cuwmc-secondary/90 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+              className="inline-block bg-cuwmc-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-cuwmc-primary/90 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
               Join CUWMC
             </Link>
