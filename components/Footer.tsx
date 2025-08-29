@@ -24,9 +24,9 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2">
               <li>
-                <a href="#about" className="text-gray-300 hover:text-cuwmc-secondary transition-colors">
-                  About
-                </a>
+                              <a href="/about" className="text-gray-300 hover:text-cuwmc-secondary transition-colors">
+                About
+              </a>
               </li>
               
               <li>
@@ -59,16 +59,16 @@ export default function Footer() {
             </h4>
             <div className="flex space-x-4">
               <a 
-                href="#" 
+                href="https://www.linkedin.com/company/cuwmc/"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-cuwmc-secondary hover:text-cuwmc-primary transition-all duration-300"
               >
-                <FaLinkedin href="https://www.linkedin.com/company/cuwmc/" className="w-5 h-5" />
+                <FaLinkedin  className="w-5 h-5" />
               </a>
               <a 
-                href="#" 
+                href="https://www.instagram.com/cuwmc/"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-cuwmc-secondary hover:text-cuwmc-primary transition-all duration-300"
               >
-                <FaInstagram href="https://www.instagram.com/cuwmc/" className="w-5 h-5" />
+                <FaInstagram  className="w-5 h-5" />
               </a>
               <a 
                 href="mailto:ugradwealthmanagement@columbia.edu" 

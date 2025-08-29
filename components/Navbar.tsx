@@ -35,7 +35,7 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <a href="#about" className="nav-link">About</a>
+              <a href="/about" className="nav-link">About</a>
               <a href="/eboard" className="nav-link">E-Board</a>
               <a href="/programs" className="nav-link">Programs</a>
               <a href="/divisions" className="nav-link">Divisions</a>
@@ -45,11 +45,11 @@ export default function Navbar() {
 
           {/* Social Media Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <a href="#" className="social-btn">
-              <FaLinkedin href="https://www.linkedin.com/company/cuwmc/" className="w-5 h-5" />
+            <a href="https://www.linkedin.com/company/cuwmc/" className="social-btn">
+              <FaLinkedin  className="w-5 h-5" />
             </a>
-            <a href="#" className="social-btn">
-              <FaInstagram href="https://www.instagram.com/cuwmc/" className="w-5 h-5" />
+            <a href="https://www.instagram.com/cuwmc/" className="social-btn">
+              <FaInstagram className="w-5 h-5" />
             </a>
           </div>
 

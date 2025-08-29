@@ -17,7 +17,7 @@ const programs: ProgramInfo[] = [
   {
     id: 'semester-research',
     title: 'Semester Research',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+    content: "Each analyst at the Columbia Undergraduate Wealth Management Club will actively contribute to research throughout the semester, focusing on topics central to the fields of Investment Management, Private Banking, and Financial Planning. Analysts will work individually and in teams to explore industry trends, evaluate investment strategies, and analyze case studies that reflect real-world client scenarios. In Investment Management, they will study portfolio construction, asset allocation, and performance evaluation across different market environments. Within Private Banking, analysts will examine the role of relationship management, tailored financial solutions, and high-net-worth client services. On the Financial Planning side, they will research retirement planning, tax optimization, and wealth transfer strategies. By engaging with these interconnected areas, each analyst will not only sharpen their technical and analytical skills but also develop a holistic understanding of wealth management, ultimately contributing to the club’s collective output of research-driven insights."
   },
   {
     id: 'the-fund',
@@ -28,9 +28,9 @@ const programs: ProgramInfo[] = [
     linkText: 'Click here for The Fund website.'
   },
   {
-    id: 'social-bonding',
-    title: 'Social Bonding',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+    id: 'past-events',
+    title: 'Past Events',
+    content: 'CUWMC has hosted numerous successful events, from educational panels with industry professionals to exciting trips and collaborative initiatives. These events showcase our commitment to providing valuable experiences and networking opportunities for our members and the broader Columbia community.'
   }
 ]
 
@@ -91,10 +91,7 @@ export default function ProgramsPage() {
             {programs.map((program) => (
               <div
                 key={program.id}
-                className={`
-                  overflow-hidden transition-all duration-500 ease-in-out
-                  ${activeProgram === program.id ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}
-                `}
+                className={activeProgram === program.id ? 'block' : 'hidden'}
               >
                 <div className="bg-gray-50 rounded-2xl p-8 border-l-4 border-cuwmc-primary">
                   <h3 className="text-2xl font-bold text-cuwmc-primary mb-4 font-garamond">
@@ -112,17 +109,95 @@ export default function ProgramsPage() {
                     </div>
                   )}
                   
-                  <p className="text-gray-700 leading-relaxed mb-4 font-garamond">
-                    {program.content}
-                  </p>
-                                       {program.hasLink && (
-                       <a
-                         href={program.linkUrl}
-                         className="inline-block bg-cuwmc-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-cuwmc-primary/90 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                       >
-                         {program.linkText}
-                       </a>
-                     )}
+                  {/* Past Events Content */}
+                  {program.id === 'past-events' && (
+                    <div className="space-y-8">
+                      <p className="text-gray-700 leading-relaxed mb-6 font-garamond">
+                        {program.content}
+                      </p>
+                      
+                      {/* Miami Trip */}
+                      <div className="bg-white p-6 rounded-xl shadow-sm">
+                        <div className="flex flex-col md:flex-row gap-6 items-start">
+                          <img src="/assets/imgs/past_events/miami.jpeg" alt="Miami Trip" className="w-full md:w-48 h-32 object-cover rounded-lg" />
+                          <div>
+                            <h4 className="text-xl font-semibold text-cuwmc-primary mb-2 font-garamond">Miami Trip</h4>
+                            <p className="text-gray-700 leading-relaxed font-garamond">
+                              CUWMC E-Board and analysts embarked on an exciting trip to Miami, where they visited prestigious financial institutions including JP Morgan Chase, Santander, and other leading asset and wealth management offices. This immersive experience provided valuable insights into the industry's operations and networking opportunities with professionals in the field.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/* Goldman Sachs VP Event */}
+                      <div className="bg-white p-6 rounded-xl shadow-sm">
+                        <div className="flex flex-col md:flex-row gap-6 items-start">
+                          <img src="/assets/imgs/past_events/joseph_puerner_gs.JPG" alt="Goldman Sachs VP Event" className="w-full md:w-48 h-32 object-cover rounded-lg" />
+                          <div>
+                            <h4 className="text-xl font-semibold text-cuwmc-primary mb-2 font-garamond">Goldman Sachs VP Event</h4>
+                            <p className="text-gray-700 leading-relaxed font-garamond">
+                              Joseph Puerner, Vice President at Goldman Sachs, visited Columbia University for an exclusive panel hosted by CUWMC. He shared his expertise and insights about the wealth management industry, answered questions from students, and provided valuable career advice for those interested in pursuing opportunities at Goldman Sachs.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/* CUWMC x SHE Presentation */}
+                      <div className="bg-white p-6 rounded-xl shadow-sm">
+                        <div className="flex flex-col md:flex-row gap-6 items-start">
+                          <img src="/assets/imgs/past_events/cuwmc_x_she.jpeg" alt="CUWMC x SHE Presentation" className="w-full md:w-48 h-32 object-cover rounded-lg" />
+                          <div>
+                            <h4 className="text-xl font-semibold text-cuwmc-primary mb-2 font-garamond">CUWMC x SHE Presentation</h4>
+                            <p className="text-gray-700 leading-relaxed font-garamond">
+                              CUWMC collaborated with SHE, a non-profit organization, to teach young high school girls about financial literacy. This initiative demonstrated our commitment to giving back to the community and empowering the next generation with essential financial knowledge and skills.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/* Stifel MDs Panel */}
+                      <div className="bg-white p-6 rounded-xl shadow-sm">
+                        <div className="flex flex-col md:flex-row gap-6 items-start">
+                          <img src="/assets/imgs/past_events/stifel.jpg" alt="Stifel MDs Panel" className="w-full md:w-48 h-32 object-cover rounded-lg" />
+                          <div>
+                            <h4 className="text-xl font-semibold text-cuwmc-primary mb-2 font-garamond">Stifel MDs Panel</h4>
+                            <p className="text-gray-700 leading-relaxed font-garamond">
+                              Stephen Brown and Patrick Buckley, Managing Directors at Stifel, visited Columbia University for an engaging panel hosted by CUWMC. They shared their extensive experience in the financial industry, answered questions from students, and provided insights into career opportunities at Stifel and the broader wealth management sector.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/* Senior Farewell */}
+                      <div className="bg-white p-6 rounded-xl shadow-sm">
+                        <div className="flex flex-col md:flex-row gap-6 items-start">
+                          <img src="/assets/imgs/past_events/senior_farewell.JPG" alt="Senior Farewell" className="w-full md:w-48 h-32 object-cover rounded-lg" />
+                          <div>
+                            <h4 className="text-xl font-semibold text-cuwmc-primary mb-2 font-garamond">Senior Farewell</h4>
+                            <p className="text-gray-700 leading-relaxed font-garamond">
+                              Club members gathered to bid farewell to the graduating seniors, celebrating their contributions to CUWMC and wishing them success in their future endeavors. This emotional event highlighted the strong bonds formed within the club and the lasting impact of our members' dedication and leadership.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                  
+                  {/* Default content for other programs */}
+                  {program.id !== 'past-events' && (
+                    <p className="text-gray-700 leading-relaxed mb-4 font-garamond">
+                      {program.content}
+                    </p>
+                  )}
+                  
+                  {program.hasLink && (
+                    <a
+                      href={program.linkUrl}
+                      className="inline-block bg-cuwmc-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-cuwmc-primary/90 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                    >
+                      {program.linkText}
+                    </a>
+                  )}
                 </div>
               </div>
             ))}

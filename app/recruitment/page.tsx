@@ -164,6 +164,24 @@ export default function RecruitmentPage() {
                   <p className="text-gray-600 font-garamond">Sep 12, 11:59pm</p>
                 </div>
               </div>
+
+              {/* First-Round Interviews */}
+              <div className="relative flex items-center">
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-cuwmc-primary rounded-full border-4 border-white shadow-lg"></div>
+                <div className="w-5/12 ml-auto pl-8 text-left">
+                  <h3 className="text-xl font-semibold text-cuwmc-primary mb-2 font-garamond">First-Round Interviews</h3>
+                  <p className="text-gray-600 font-garamond">Sep 15-17, Times TBD</p>
+                </div>
+              </div>
+
+              {/* Pitch Interviews (IMD Only) */}
+              <div className="relative flex items-center">
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-cuwmc-primary rounded-full border-4 border-white shadow-lg"></div>
+                <div className="w-5/12 pr-8 text-right">
+                  <h3 className="text-xl font-semibold text-cuwmc-primary mb-2 font-garamond">Pitch Interviews (IMD Only)</h3>
+                  <p className="text-gray-600 font-garamond">Sep 18, Times TBD</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

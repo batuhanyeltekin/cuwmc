@@ -98,9 +98,9 @@ export default function EBoardPage() {
               Executive Board
             </h1>
             <div className="w-20 h-1 bg-cuwmc-secondary mx-auto"></div>
-            <p className="text-xl text-gray-600 mt-6 max-w-3xl mx-auto font-garamond">
+            {/* <p className="text-xl text-gray-600 mt-6 max-w-3xl mx-auto font-garamond">
               Meet the dedicated leaders driving CUWMC's mission to empower the next generation of financial professionals.
-            </p>
+            </p> */}
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
