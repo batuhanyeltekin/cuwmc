@@ -83,7 +83,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8 text-center">
           <p className="text-gray-400">
-            © 2025 Columbia Undergraduate Wealth Management Club. All rights reserved. Website by Batuhan Yeltekin.
+            © 2025 Columbia Undergraduate Wealth Management Club. All rights reserved. Made with ❤️ by Batuhan Yeltekin.
           </p>
         </div>
       </div>
