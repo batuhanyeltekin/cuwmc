@@ -57,12 +57,12 @@ export default function Navbar() {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-white hover:text-cuwmc-secondary focus:outline-none focus:text-cuwmc-secondary"
+              className="text-white hover:text-cuwmc-secondary focus:outline-none focus:text-cuwmc-secondary transition-all duration-300 ease-in-out"
             >
               {isMenuOpen ? (
-                <FaTimes className="w-6 h-6" />
+                <FaTimes className="w-6 h-6 transform rotate-90 transition-all duration-300 ease-in-out" />
               ) : (
-                <FaBars className="w-6 h-6" />
+                <FaBars className="w-6 h-6 transform rotate-0 transition-all duration-300 ease-in-out" />
               )}
             </button>
           </div>
@@ -72,18 +72,18 @@ export default function Navbar() {
       {/* Mobile Navigation */}
       <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-cuwmc-primary">
-          <a href="#about" className="mobile-nav-link" onClick={closeMenu}>About</a>
+          <a href="/about" className="mobile-nav-link" onClick={closeMenu}>About</a>
           <a href="/eboard" className="mobile-nav-link" onClick={closeMenu}>E-Board</a>
           <a href="/programs" className="mobile-nav-link" onClick={closeMenu}>Programs</a>
-          <a href="#divisions" className="mobile-nav-link" onClick={closeMenu}>Divisions</a>
-          <a href="#recruitment" className="mobile-nav-link" onClick={closeMenu}>Recruitment</a>
+          <a href="/divisions" className="mobile-nav-link" onClick={closeMenu}>Divisions</a>
+          <a href="/recruitment" className="mobile-nav-link" onClick={closeMenu}>Recruitment</a>
           
           {/* Mobile Social Media */}
           <div className="flex justify-center space-x-4 pt-4">
-            <a href="#" className="social-btn">
+            <a href="https://www.linkedin.com/company/cuwmc/" className="social-btn">
               <FaLinkedin className="w-5 h-5" />
             </a>
-            <a href="#" className="social-btn">
+            <a href="https://www.instagram.com/cuwmc/" className="social-btn">
               <FaInstagram className="w-5 h-5" />
             </a>
           </div>

@@ -38,19 +38,13 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed font-garamond">
                 <p>
-                  CUWMC is the leading student organization at Columbia University dedicated to wealth advisory.
+                  CUWMC is the leading student organization at Columbia University dedicated to Asset and Wealth Management.
                 </p>
                 <p>
-                  Established in 2023, we guide students through the multifaceted landscape of wealth management.
+                  We specialize in investment and client relationship strategies through our three main divisions: Investment Management, Financial Planning, and Private Banking.
                 </p>
                 <p>
-                  CUWMC's efforts are to train the next generation of private wealth advisors and educate undergraduates about personal finance.
-                </p>
-                <p>
-                  As the impending 'Great Wealth Transfer' is set to redefine the financial landscape in the coming decades, our goal is to prepare Columbia's driven students, who are likely to be future inheritors and business leaders, with the necessary expertise to handle their wealth prudently.
-                </p>
-                <p>
-                  Our club is split into three divisions: Investment Management, Financial Planning, and Private Banking.
+                  Following our motto of learning through teaching, we are motivated to bridge the financial literacy gap within the Columbia community by providing educational resources accessible to all Columbia students.
                 </p>
               </div>
             </div>
@@ -64,18 +58,13 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed font-garamond">
                 <p>
-                  Our Analysts work together to lead six educational programs throughout the academic year that are open to the entire student body:
-                </p>
-                <div className="bg-gray-50 p-6 rounded-xl">
-                  <p className="font-semibold text-cuwmc-primary mb-2">
-                    PWM Masterclass, Intro to Personal Finance, Investment Management, Financial Planning, Banking Products, and the Pitch Competition.
-                  </p>
-                </div>
-                <p>
-                  Our signature initiative, the 'Private Wealth Management Masterclass,' is a testament to our commitment to financial education.
+                  At CUWMC, we give undergraduates the tools and experiences to understand asset and wealth management at a professional level. Our work is organized across three divisions: Investment Management, Financial Planning, and Private Banking, each offering students the opportunity to delve into research, strategy, and client-facing skills.
                 </p>
                 <p>
-                  This two-hour seminar is meticulously designed to introduce students to the intricacies of the wealth management industry and fundamentals of financial planning.
+                  We run a 9-week Securities Industry Essentials (SIE) training program, operate a paper-trading fund powered by BlackRock's Aladdin platform, and host our flagship "Wealth Management Week," where analysts present semester-long research to the broader Columbia community.
+                </p>
+                <p>
+                  Through workshops, speaker events, and direct access to industry platforms, our members bridge the gap between theory and practice, preparing for careers in asset management, banking, and beyond.
                 </p>
               </div>
             </div>
