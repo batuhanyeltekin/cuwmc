@@ -55,10 +55,10 @@ const eboardMembers: EBoardMember[] = [
     linkedinUrl: "https://www.linkedin.com/in/martin-a-bravo/"
   },
   {
-    name: "Jonathan Rose",
+    name: "Christopher O'Connell",
     role: "Head of Financial Planning Division",
-    description: "Class of '26, Economics. Prior Experience: Analyst at WestPac Wealth Management, Analyst at Lead Bank, Analyst at Acquid Capital",
-    imagePath: "/assets/imgs/portraits/jonathan_rose.jpg"
+    description: "Class of '28, Philosophy-Economics. Experience: Sales Executive at Mankind Marketing, Treasurer at Columbia Emerging Markets Society and Columbia Corporate Law and Business Association.",
+    imagePath: "/assets/imgs/portraits/christopher_oconnell.jpeg"
   },
   {
     name: "Sofia Torrecillas",
@@ -127,7 +127,9 @@ export default function EBoardPage() {
                   <img
                     src={member.imagePath}
                     alt={member.name}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    className={`w-full h-full object-cover hover:scale-105 transition-transform duration-300 ${
+                      member.name === "Christopher O'Connell" ? 'object-top scale-110' : ''
+                    }`}
                   />
                 </div>
                 <div className="p-6">
