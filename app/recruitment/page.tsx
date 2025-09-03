@@ -260,6 +260,30 @@ export default function RecruitmentPage() {
                 title="Coffee Chat Schedule 5"
               ></iframe>
             </div>
+
+            {/* Calendar 6 */}
+            <div className="bg-gray-50 rounded-2xl p-6">
+              <iframe 
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2409J5i3yz02x7DWgBKHUWaztR5roKEVWah1PErDvAX5q1jlCgXB6jOAdbY62X_dEwALu6HJA9?gv=true" 
+                style={{border: 0}} 
+                width="100%" 
+                height="600" 
+                frameBorder="0"
+                title="Coffee Chat Schedule 6"
+              ></iframe>
+            </div>
+
+            {/* Calendar 7 */}
+            <div className="bg-gray-50 rounded-2xl p-6">
+              <iframe 
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2orb5F14frT5o7wOplasi913JA-7XiqAJ3lYGNXybb_0vnVMk9Vmm_nHdFjzJ7K6Xh2rDH26FQ?gv=true" 
+                style={{border: 0}} 
+                width="100%" 
+                height="600" 
+                frameBorder="0"
+                title="Coffee Chat Schedule 7"
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>
