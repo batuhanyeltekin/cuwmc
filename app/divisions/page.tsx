@@ -39,9 +39,9 @@ export default function DivisionsPage() {
                 <p className="text-lg text-gray-700 leading-relaxed mb-6 font-garamond">
                   Our Investment Management Division focuses on the strategic management of investment portfolios to achieve financial goals. Analysts research and present on traditional asset allocations, including debt and equity, as well as alternative investments and ESG (Environmental, Social, and Governance) investing. They cover key concepts such as portfolio theory, diversification, hedging strategies, investment horizons, and liquidity management, ultimately providing a comprehensive understanding of effective portfolio management.
                 </p>
-                <button className="bg-cuwmc-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-cuwmc-primary/90 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+                {/* <button className="bg-cuwmc-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-cuwmc-primary/90 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                   Learn More
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
@@ -56,9 +56,9 @@ export default function DivisionsPage() {
                 <p className="text-lg text-gray-700 leading-relaxed mb-6 font-garamond">
                   The Private Banking Division specializes in the array of banking services essential for ultra-high-net-worth clients. Students gain a thorough understanding of credit and lending solutions, foreign exchange services, concierge and lifestyle offerings, and cash management techniques. By studying these products and services, Analysts learn how to address the complex financial needs of affluent individuals and provide tailored banking solutions to enhance their financial well-being.
                 </p>
-                <button className="bg-cuwmc-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-cuwmc-primary/90 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+                {/* <button className="bg-cuwmc-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-cuwmc-primary/90 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                   Learn More
-                </button>
+                </button> */}
               </div>
               <div>
                 <img 
@@ -87,9 +87,9 @@ export default function DivisionsPage() {
                 <p className="text-lg text-gray-700 leading-relaxed mb-6 font-garamond">
                   Analysts in the Financial Planning Division delve into a wide range of personal finance topics, including budgeting, retirement planning, philanthropy, and tax strategies. The emphasis is on creating comprehensive financial plans tailored to individual timelines, risk tolerance, and investment horizons. This includes in-depth exploration of estate planning, charitable giving, tax optimization, and other aspects essential to achieving long-term financial stability and growth.
                 </p>
-                <button className="bg-cuwmc-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-cuwmc-primary/90 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+                {/* <button className="bg-cuwmc-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-cuwmc-primary/90 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                   Learn More
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

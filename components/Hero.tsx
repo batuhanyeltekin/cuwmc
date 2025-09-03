@@ -27,11 +27,11 @@ export default function Hero() {
             Empowering the next generation of financial leaders through education, networking, and hands-on experience in wealth management.
           </p>
           <button 
-            onClick={() => window.open('https://www.instagram.com/cuwmc/', '_blank')}
+            onClick={() => window.open('https://forms.gle/KpyxUv5XdmAT9wv68', '_blank')}
             className="inline-block bg-cuwmc-primary text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-transparent hover:text-white border-2 border-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg font-garamond backdrop-blur-sm animate-fade-in-up"
             style={{ animationDelay: '0.4s' }}
           >
-            Follow us on Instagram!
+            Apply for the Fall 2025 Analyst Cohort!
           </button>
         </div>
       </div>

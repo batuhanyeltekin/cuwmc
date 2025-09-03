@@ -23,11 +23,10 @@ export default function RecruitmentPage() {
             <div className="space-y-8">
               <div className="text-center lg:text-left">
                 <button 
-                  onClick={() => window.open('#', '_blank')}
-                  className="inline-block bg-cuwmc-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-cuwmc-primary/90 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg mb-8 group"
+                  onClick={() => window.open('https://forms.gle/KpyxUv5XdmAT9wv68', '_blank')}
+                  className="inline-block bg-cuwmc-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-cuwmc-primary/90 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg mb-8"
                 >
-                  <span className="group-hover:hidden">Application Link</span>
-                  <span className="hidden group-hover:inline">Coming Soon!</span>
+                  Application Link
                 </button>
                 
                 <p className="text-lg text-gray-700 leading-relaxed font-garamond mb-6">
@@ -182,6 +181,84 @@ export default function RecruitmentPage() {
                   <p className="text-gray-600 font-garamond">Sep 18, Times TBD</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Register for Coffee Chats Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-cuwmc-primary mb-4 font-garamond">
+              Register for Coffee Chats
+            </h2>
+            <div className="w-20 h-1 bg-cuwmc-secondary mx-auto mb-8"></div>
+            <p className="text-lg text-gray-700 leading-relaxed font-garamond max-w-3xl mx-auto">
+              Schedule a coffee chat with our executive board members to learn more about CUWMC and get your questions answered. Choose from the available time slots below.
+            </p>
+          </div>
+
+          {/* Google Calendar Appointment Schedules */}
+          <div className="space-y-12">
+            {/* Calendar 1 */}
+            <div className="bg-gray-50 rounded-2xl p-6">
+              <iframe 
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3y3VCi1EbP2i6hbEI2CNIF6W5NwJpLu4NGq8odz4D-rmcOF4p_SwcnFYPPe69HOo3OTLA_ZAMW?gv=true" 
+                style={{border: 0}} 
+                width="100%" 
+                height="600" 
+                frameBorder="0"
+                title="Coffee Chat Schedule 1"
+              ></iframe>
+            </div>
+
+            {/* Calendar 2 */}
+            <div className="bg-gray-50 rounded-2xl p-6">
+              <iframe 
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2EzUxLMenkAp1jay3HNulbarWzMdkrMncOp2kJ7Tzsfqgq8o4hjU3_ZgxebiW9tNYvFQVdUqt1?gv=true" 
+                style={{border: 0}} 
+                width="100%" 
+                height="600" 
+                frameBorder="0"
+                title="Coffee Chat Schedule 2"
+              ></iframe>
+            </div>
+
+            {/* Calendar 3 */}
+            <div className="bg-gray-50 rounded-2xl p-6">
+              <iframe 
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ13QCdEuWEBYQdlCVV6MYovdG7KMo2VU57LSGl0OW_B6fho9j6t39lZZntCBX7BjJoH_LidH0rp?gv=true" 
+                style={{border: 0}} 
+                width="100%" 
+                height="600" 
+                frameBorder="0"
+                title="Coffee Chat Schedule 3"
+              ></iframe>
+            </div>
+
+            {/* Calendar 4 */}
+            <div className="bg-gray-50 rounded-2xl p-6">
+              <iframe 
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3WDsLA1acHqlwhZ3fmfFIAjOU1GSE2bHybAvAHZEaC95jIFBRFI5Ly3vNvvM5zFiRcGJB023Q7?gv=true" 
+                style={{border: 0}} 
+                width="100%" 
+                height="600" 
+                frameBorder="0"
+                title="Coffee Chat Schedule 4"
+              ></iframe>
+            </div>
+
+            {/* Calendar 5 */}
+            <div className="bg-gray-50 rounded-2xl p-6">
+              <iframe 
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2TNpSnLM7vau0C_gMcDqfdlQB6ZAVBIQxo7P31chxpGu94m28KbFIpg4POBQ9rnzNiEZMSqNuN?gv=true" 
+                style={{border: 0}} 
+                width="100%" 
+                height="600" 
+                frameBorder="0"
+                title="Coffee Chat Schedule 5"
+              ></iframe>
             </div>
           </div>
         </div>
