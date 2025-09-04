@@ -284,6 +284,18 @@ export default function RecruitmentPage() {
                 title="Coffee Chat Schedule 7"
               ></iframe>
             </div>
+
+            {/* Calendar 8 */}
+            <div className="bg-gray-50 rounded-2xl p-6">
+              <iframe 
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Utw3jYXzrUag1Vv6ChDOQm9EtNM7Pfj_1YUy-3EkNuXSEf6qWAKp59zFeONPI2fY6Hku9WxvS?gv=true"                
+                style={{border: 0}} 
+                width="100%" 
+                height="600" 
+                frameBorder="0"
+                title="Coffee Chat Schedule 8"
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>
