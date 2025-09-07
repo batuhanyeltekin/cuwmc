@@ -142,7 +142,7 @@ export default function RecruitmentPage() {
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-cuwmc-primary rounded-full border-4 border-white shadow-lg"></div>
                 <div className="w-5/12 pr-8 text-right">
                   <h3 className="text-xl font-semibold text-cuwmc-primary mb-2 font-garamond">CUWMC Info Session</h3>
-                  <p className="text-gray-600 font-garamond">Sep 8, Time TBD</p>
+                  <p className="text-gray-600 font-garamond">Sep 9, 5:00-6:00pm, Room TBD</p>
                 </div>
               </div>
 
@@ -151,7 +151,7 @@ export default function RecruitmentPage() {
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-cuwmc-primary rounded-full border-4 border-white shadow-lg"></div>
                 <div className="w-5/12 ml-auto pl-8 text-left">
                   <h3 className="text-xl font-semibold text-cuwmc-primary mb-2 font-garamond">Lawn Recruitment Social</h3>
-                  <p className="text-gray-600 font-garamond">Sep 10, Time TBD</p>
+                  <p className="text-gray-600 font-garamond">Sep 10, 5:00-6:00pm, Furnald Lawn</p>
                 </div>
               </div>
 
@@ -159,7 +159,7 @@ export default function RecruitmentPage() {
               <div className="relative flex items-center">
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-cuwmc-primary rounded-full border-4 border-white shadow-lg"></div>
                 <div className="w-5/12 pr-8 text-right">
-                  <h3 className="text-xl font-semibold text-cuwmc-primary mb-2 font-garamond">Applications Due</h3>
+                  <h3 className="text-xl font-semibold text-cuwmc-primary mb-2 font-garamond">Applications Due/Coffee Chats Close</h3>
                   <p className="text-gray-600 font-garamond">Sep 12, 11:59pm</p>
                 </div>
               </div>
@@ -169,7 +169,7 @@ export default function RecruitmentPage() {
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-cuwmc-primary rounded-full border-4 border-white shadow-lg"></div>
                 <div className="w-5/12 ml-auto pl-8 text-left">
                   <h3 className="text-xl font-semibold text-cuwmc-primary mb-2 font-garamond">First-Round Interviews</h3>
-                  <p className="text-gray-600 font-garamond">Sep 15-17, Times TBD</p>
+                  <p className="text-gray-600 font-garamond">Sep 15-18, Times TBD</p>
                 </div>
               </div>
 
@@ -179,6 +179,24 @@ export default function RecruitmentPage() {
                 <div className="w-5/12 pr-8 text-right">
                   <h3 className="text-xl font-semibold text-cuwmc-primary mb-2 font-garamond">Pitch Interviews (IMD Only)</h3>
                   <p className="text-gray-600 font-garamond">Sep 18, Times TBD</p>
+                </div>
+              </div>
+
+              {/* Deliberations and Offer Notifications Sent */}
+              <div className="relative flex items-center">
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-cuwmc-primary rounded-full border-4 border-white shadow-lg"></div>
+                <div className="w-5/12 ml-auto pl-8 text-left">
+                  <h3 className="text-xl font-semibold text-cuwmc-primary mb-2 font-garamond">Deliberations and Offer Notifications Sent</h3>
+                  <p className="text-gray-600 font-garamond">Sep 20</p>
+                </div>
+              </div>
+
+              {/* New Analyst Onboarding */}
+              <div className="relative flex items-center">
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-cuwmc-primary rounded-full border-4 border-white shadow-lg"></div>
+                <div className="w-5/12 pr-8 text-right">
+                  <h3 className="text-xl font-semibold text-cuwmc-primary mb-2 font-garamond">New Analyst Onboarding</h3>
+                  <p className="text-gray-600 font-garamond">Sep 21</p>
                 </div>
               </div>
             </div>
@@ -201,10 +219,10 @@ export default function RecruitmentPage() {
 
           {/* Google Calendar Appointment Schedules */}
           <div className="space-y-12">
-            {/* Calendar 1 */}
+            {/* Calendar 1 - New Coffee Chat (Added First) */}
             <div className="bg-gray-50 rounded-2xl p-6">
               <iframe 
-                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3y3VCi1EbP2i6hbEI2CNIF6W5NwJpLu4NGq8odz4D-rmcOF4p_SwcnFYPPe69HOo3OTLA_ZAMW?gv=true" 
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2H0M4QvU3H-kDALsjtnJvDXAtW-kcAvPpiiCNszhpU5_bGIrqa3msOXQVqc9vVVMyQbDtNuJ4K?gv=true" 
                 style={{border: 0}} 
                 width="100%" 
                 height="600" 
@@ -213,10 +231,10 @@ export default function RecruitmentPage() {
               ></iframe>
             </div>
 
-            {/* Calendar 2 */}
+            {/* Calendar 2 - New Coffee Chat */}
             <div className="bg-gray-50 rounded-2xl p-6">
               <iframe 
-                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2EzUxLMenkAp1jay3HNulbarWzMdkrMncOp2kJ7Tzsfqgq8o4hjU3_ZgxebiW9tNYvFQVdUqt1?gv=true" 
+                src="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ36DwnalMBO7SgBZC3X86KhoYWGMeppTBCgPb-pmyvRVbIKRfByknJ5dJzVQXs_ctdPZd7Ty1RA" 
                 style={{border: 0}} 
                 width="100%" 
                 height="600" 
@@ -225,10 +243,10 @@ export default function RecruitmentPage() {
               ></iframe>
             </div>
 
-            {/* Calendar 3 */}
+            {/* Calendar 3 - New Coffee Chat */}
             <div className="bg-gray-50 rounded-2xl p-6">
               <iframe 
-                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ13QCdEuWEBYQdlCVV6MYovdG7KMo2VU57LSGl0OW_B6fho9j6t39lZZntCBX7BjJoH_LidH0rp?gv=true" 
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ17OipzYBtk4oEcBY2iiniKBa4PJgPnqI0eJd5AxFYeOiVxjMaMiNzN0jQTX46hiET0a4rRAUfQ?gv=true" 
                 style={{border: 0}} 
                 width="100%" 
                 height="600" 
@@ -240,7 +258,7 @@ export default function RecruitmentPage() {
             {/* Calendar 4 */}
             <div className="bg-gray-50 rounded-2xl p-6">
               <iframe 
-                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3WDsLA1acHqlwhZ3fmfFIAjOU1GSE2bHybAvAHZEaC95jIFBRFI5Ly3vNvvM5zFiRcGJB023Q7?gv=true" 
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3y3VCi1EbP2i6hbEI2CNIF6W5NwJpLu4NGq8odz4D-rmcOF4p_SwcnFYPPe69HOo3OTLA_ZAMW?gv=true" 
                 style={{border: 0}} 
                 width="100%" 
                 height="600" 
@@ -252,7 +270,7 @@ export default function RecruitmentPage() {
             {/* Calendar 5 */}
             <div className="bg-gray-50 rounded-2xl p-6">
               <iframe 
-                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2TNpSnLM7vau0C_gMcDqfdlQB6ZAVBIQxo7P31chxpGu94m28KbFIpg4POBQ9rnzNiEZMSqNuN?gv=true" 
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2EzUxLMenkAp1jay3HNulbarWzMdkrMncOp2kJ7Tzsfqgq8o4hjU3_ZgxebiW9tNYvFQVdUqt1?gv=true" 
                 style={{border: 0}} 
                 width="100%" 
                 height="600" 
@@ -264,7 +282,7 @@ export default function RecruitmentPage() {
             {/* Calendar 6 */}
             <div className="bg-gray-50 rounded-2xl p-6">
               <iframe 
-                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2409J5i3yz02x7DWgBKHUWaztR5roKEVWah1PErDvAX5q1jlCgXB6jOAdbY62X_dEwALu6HJA9?gv=true" 
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ13QCdEuWEBYQdlCVV6MYovdG7KMo2VU57LSGl0OW_B6fho9j6t39lZZntCBX7BjJoH_LidH0rp?gv=true" 
                 style={{border: 0}} 
                 width="100%" 
                 height="600" 
@@ -276,7 +294,7 @@ export default function RecruitmentPage() {
             {/* Calendar 7 */}
             <div className="bg-gray-50 rounded-2xl p-6">
               <iframe 
-                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2orb5F14frT5o7wOplasi913JA-7XiqAJ3lYGNXybb_0vnVMk9Vmm_nHdFjzJ7K6Xh2rDH26FQ?gv=true" 
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3WDsLA1acHqlwhZ3fmfFIAjOU1GSE2bHybAvAHZEaC95jIFBRFI5Ly3vNvvM5zFiRcGJB023Q7?gv=true" 
                 style={{border: 0}} 
                 width="100%" 
                 height="600" 
@@ -288,12 +306,48 @@ export default function RecruitmentPage() {
             {/* Calendar 8 */}
             <div className="bg-gray-50 rounded-2xl p-6">
               <iframe 
-                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Utw3jYXzrUag1Vv6ChDOQm9EtNM7Pfj_1YUy-3EkNuXSEf6qWAKp59zFeONPI2fY6Hku9WxvS?gv=true"                
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2TNpSnLM7vau0C_gMcDqfdlQB6ZAVBIQxo7P31chxpGu94m28KbFIpg4POBQ9rnzNiEZMSqNuN?gv=true" 
                 style={{border: 0}} 
                 width="100%" 
                 height="600" 
                 frameBorder="0"
                 title="Coffee Chat Schedule 8"
+              ></iframe>
+            </div>
+
+            {/* Calendar 9 */}
+            <div className="bg-gray-50 rounded-2xl p-6">
+              <iframe 
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2409J5i3yz02x7DWgBKHUWaztR5roKEVWah1PErDvAX5q1jlCgXB6jOAdbY62X_dEwALu6HJA9?gv=true" 
+                style={{border: 0}} 
+                width="100%" 
+                height="600" 
+                frameBorder="0"
+                title="Coffee Chat Schedule 9"
+              ></iframe>
+            </div>
+
+            {/* Calendar 10 */}
+            <div className="bg-gray-50 rounded-2xl p-6">
+              <iframe 
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2orb5F14frT5o7wOplasi913JA-7XiqAJ3lYGNXybb_0vnVMk9Vmm_nHdFjzJ7K6Xh2rDH26FQ?gv=true" 
+                style={{border: 0}} 
+                width="100%" 
+                height="600" 
+                frameBorder="0"
+                title="Coffee Chat Schedule 10"
+              ></iframe>
+            </div>
+
+            {/* Calendar 11 */}
+            <div className="bg-gray-50 rounded-2xl p-6">
+              <iframe 
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Utw3jYXzrUag1Vv6ChDOQm9EtNM7Pfj_1YUy-3EkNuXSEf6qWAKp59zFeONPI2fY6Hku9WxvS?gv=true"                
+                style={{border: 0}} 
+                width="100%" 
+                height="600" 
+                frameBorder="0"
+                title="Coffee Chat Schedule 11"
               ></iframe>
             </div>
           </div>
