@@ -142,7 +142,7 @@ export default function RecruitmentPage() {
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-cuwmc-primary rounded-full border-4 border-white shadow-lg"></div>
                 <div className="w-5/12 pr-8 text-right">
                   <h3 className="text-xl font-semibold text-cuwmc-primary mb-2 font-garamond">CUWMC Info Session</h3>
-                  <p className="text-gray-600 font-garamond">Sep 8, 6:00-8:00pm, Room TBD</p>
+                  <p className="text-gray-600 font-garamond">Sep 8, 6:00-8:00pm, Uris 107</p>
                 </div>
               </div>
 
@@ -151,7 +151,7 @@ export default function RecruitmentPage() {
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-cuwmc-primary rounded-full border-4 border-white shadow-lg"></div>
                 <div className="w-5/12 ml-auto pl-8 text-left">
                   <h3 className="text-xl font-semibold text-cuwmc-primary mb-2 font-garamond">CUWMC Sample Presentation</h3>
-                  <p className="text-gray-600 font-garamond">Sep 9, 5:00-6:00pm, Room TBD</p>
+                  <p className="text-gray-600 font-garamond">Sep 9, 5:00-6:00pm, Uris 107</p>
                 </div>
               </div>
 
