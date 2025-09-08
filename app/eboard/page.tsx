@@ -24,7 +24,9 @@ const eboardMembers: EBoardMember[] = [
     name: "Leen Alshorafa",
     role: "Co-President",
     description: "Class of '27, Comp. Eng., Poli. Sci. & Econ. Experience: Investment Analyst @ Tenami Capital, IB Intern @ HSBC",
-    imagePath: "/assets/imgs/portraits/leen_alshorafa.jpg"
+    imagePath: "/assets/imgs/portraits/leen_alshorafa.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/leenalshorafa/"
+
   },
   {
     name: "Alexandra Paiz",
