@@ -24,7 +24,7 @@ const programs: ProgramInfo[] = [
     title: 'The Fund',
     content: 'The Fund is a paper-trading portfolio built on second-order thinking, risk consciousness, and principles of anti-fragility. By applying disciplined capital allocation and rigorous risk premia pricing, it aims to create resilient portfolios capable of navigating diverse market conditions. As the capstone of CUWMC\'s Investment Management Division pipeline, it transforms years of research into practice within a live, simulated market environment.',
     hasLink: true,
-    linkUrl: '#',
+    linkUrl: 'https://thefund.columbiawm.org/',
     linkText: 'Click here for The Fund website.'
   },
   {

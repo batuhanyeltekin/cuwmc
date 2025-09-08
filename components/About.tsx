@@ -140,7 +140,7 @@ export default function About() {
           </div>
           
           <div className="flex justify-center">
-            <button onClick={() => window.open('https://thetrust.columbiawm.org/', '_blank')}>
+            <button onClick={() => window.open('https://thefund.columbiawm.org/', '_blank')}>
                 <img 
               src="/assets/imgs/company_logos/BlackRock_wordmark.svg.png" 
               alt="BlackRock" 
