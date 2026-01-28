@@ -26,12 +26,17 @@ export default function Hero() {
           <p className="text-xl md:text-2xl text-gray-100 leading-relaxed font-garamond max-w-4xl mx-auto drop-shadow-md animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             Empowering the next generation of financial leaders through education, networking, and hands-on experience in wealth management.
           </p>
-          <button 
-            onClick={() => window.open('https://forms.gle/KpyxUv5XdmAT9wv68', '_blank')}
+          <button
+            onClick={() =>
+              window.open(
+                'https://docs.google.com/forms/d/e/1FAIpQLSeSwGMr2kkLNdiYMCpJMdbNvF3blSfzafTF5mQdOYdzD9r_EA/viewform',
+                '_blank'
+              )
+            }
             className="inline-block bg-cuwmc-primary text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-transparent hover:text-white border-2 border-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg font-garamond backdrop-blur-sm animate-fade-in-up"
             style={{ animationDelay: '0.4s' }}
           >
-            Apply for the Fall 2025 Analyst Cohort!
+            Apply for Spring 2026 Recruitment
           </button>
         </div>
       </div>
