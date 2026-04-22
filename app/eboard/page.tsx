@@ -102,7 +102,7 @@ const eboardMembers: EBoardMember[] = [
     name: "Alia Kafil",
     role: "Director of Logistics",
     description: "Class of '27, Financial Economics and Political Science, Corporate Legal Intern @ Dean Street Law, Incoming S&T Intern @ Barclays",
-    imagePath: "/assets/imgs/portraits/alia_kafil.jpg",
+    imagePath: "/assets/imgs/portraits/alia_kafil.png",
     linkedinUrl: "https://www.linkedin.com/in/alia-kafil-090a8031b/"
   },
   {
@@ -118,7 +118,7 @@ export default function EBoardPage() {
   return (
     <main className="min-h-screen">
       <Navbar />
-      
+
       <section className="pt-20 pb-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -133,11 +133,10 @@ export default function EBoardPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {eboardMembers.map((member, index) => (
-              <div 
-                key={index} 
-                className={`bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden ${
-                  member.linkedinUrl ? 'cursor-pointer hover:shadow-2xl' : ''
-                }`}
+              <div
+                key={index}
+                className={`bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden ${member.linkedinUrl ? 'cursor-pointer hover:shadow-2xl' : ''
+                  }`}
                 onClick={() => member.linkedinUrl && window.open(member.linkedinUrl, '_blank')}
               >
                 <div className="aspect-square overflow-hidden">
@@ -145,6 +144,7 @@ export default function EBoardPage() {
                     src={member.imagePath}
                     alt={member.name}
                     className={`w-full h-full object-cover hover:scale-105 transition-transform duration-300 ${
+                      member.name === "Angelina Chen" ? 'object-[center_10%] scale-[1.35]' :
                       member.name === "Christopher O'Connell" || member.name === "Santiago Quintero" || member.name === "Charlotte Lorraine" ? 'object-top scale-110' : ''
                     }`}
                   />
