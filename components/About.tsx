@@ -139,14 +139,19 @@ export default function About() {
             <div className="w-20 h-1 bg-cuwmc-secondary mx-auto"></div>
           </div>
           
-          <div className="flex justify-center">
+          <div className="flex justify-center items-center gap-16 md:gap-24">
             <button onClick={() => window.open('https://thefund.columbiawm.org/', '_blank')}>
                 <img 
               src="/assets/imgs/company_logos/BlackRock_wordmark.svg.png" 
               alt="BlackRock" 
-              className="h-24 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+              className="h-12 md:h-16 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
             />
             </button>
+            <img 
+              src="/assets/imgs/company_logos/pwm_official_partner.PNG" 
+              alt="PWM Official Partner" 
+              className="h-24 md:h-32 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+            />
           </div>
         </div>
       </div>
@@ -164,7 +169,7 @@ export default function About() {
         
                 {/* Static Logo Display */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 items-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 items-center justify-items-center">
             <img src="/assets/imgs/company_logos/barclays-3-e1748366367942.png" alt="Barclays" style={{ height: '160px', width: 'auto' }} className="object-contain" />
             <img src="/assets/imgs/company_logos/BlackRock_wordmark.svg.png" alt="BlackRock" style={{ height: '160px', width: 'auto' }} className="object-contain" />
             <img src="/assets/imgs/company_logos/Citi.svg.png" alt="Citi" style={{ height: '80px', width: 'auto' }} className="object-contain" />
@@ -173,6 +178,15 @@ export default function About() {
             <img src="/assets/imgs/company_logos/jpm.png" alt="JPMorgan Chase" style={{ height: '160px', width: 'auto' }} className="object-contain" />
             <img src="/assets/imgs/company_logos/Morgan_Stanley_Logo_1.svg" alt="Morgan Stanley" style={{ height: '160px', width: 'auto' }} className="object-contain" />
             <img src="/assets/imgs/company_logos/ubs.png" alt="UBS" style={{ height: '160px', width: 'auto' }} className="object-contain" />
+            <div className="col-span-full flex justify-center w-full">
+              <img 
+                src="/assets/imgs/company_logos/nasa.png" 
+                alt="NASA" 
+                title="Yes, we actually have a CUWMC board member who is interning at NASA. #cuwmcstrong #wealthmanagingspace"
+                style={{ height: '160px', width: 'auto' }} 
+                className="object-contain" 
+              />
+            </div>
           </div>
         </div>
       </div>

@@ -19,7 +19,7 @@ export default function Home() {
       {/* <Board /> */}
       {/* <Programs /> */}
       {/* <Divisions /> */}
-      <Recruitment />
+      {/* <Recruitment /> */}
       <Footer />
     </main>
   )

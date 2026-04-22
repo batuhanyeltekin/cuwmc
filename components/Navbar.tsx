@@ -40,6 +40,7 @@ export default function Navbar() {
               <a href="/programs" className="nav-link">Programs</a>
               <a href="/divisions" className="nav-link">Divisions</a>
               <a href="/recruitment" className="nav-link">Recruitment</a>
+              <a href="/pwmpathway" className="nav-link">PWM Pathway</a>
             </div>
           </div>
 
@@ -77,6 +78,7 @@ export default function Navbar() {
           <a href="/programs" className="mobile-nav-link" onClick={closeMenu}>Programs</a>
           <a href="/divisions" className="mobile-nav-link" onClick={closeMenu}>Divisions</a>
           <a href="/recruitment" className="mobile-nav-link" onClick={closeMenu}>Recruitment</a>
+          <a href="/pwmpathway" className="mobile-nav-link" onClick={closeMenu}>PWM Pathway</a>
           
           {/* Mobile Social Media */}
           <div className="flex justify-center space-x-4 pt-4">

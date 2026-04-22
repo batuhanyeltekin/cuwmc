@@ -26,7 +26,7 @@ export default function Hero() {
           <p className="text-xl md:text-2xl text-gray-100 leading-relaxed font-garamond max-w-4xl mx-auto drop-shadow-md animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             Empowering the next generation of financial leaders through education, networking, and hands-on experience in wealth management.
           </p>
-          <button
+          {/* <button
             onClick={() =>
               window.open(
                 'https://docs.google.com/forms/d/e/1FAIpQLSeSwGMr2kkLNdiYMCpJMdbNvF3blSfzafTF5mQdOYdzD9r_EA/viewform',
@@ -37,7 +37,7 @@ export default function Hero() {
             style={{ animationDelay: '0.4s' }}
           >
             Apply for Spring 2026 Recruitment
-          </button>
+          </button> */}
         </div>
       </div>
 
