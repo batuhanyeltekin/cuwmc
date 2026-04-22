@@ -14,9 +14,9 @@ interface EBoardMember {
 
 const eboardMembers: EBoardMember[] = [
   {
-    name: "Anghelo Adrian Chavira-Barrera",
+    name: "Anghelo Chavira-Barrera",
     role: "Co-President",
-    description: "Class of '28, Applied Math. Prior Experience: Credit Risk Management @ El Puerto de Liverpool & Finance Intern @ ENAV Offshore",
+    description: "Class of '28, Math. Experience: Incoming IB Intern @ UBS, Prev. Credit Risk Intern @ El Puerto de Liverpool & Corp. Fin. Intern @ ENAV Offshore",
     imagePath: "/assets/imgs/portraits/anghelo_chavira-barrera.jpg",
     linkedinUrl: "https://www.linkedin.com/in/anghelo-chavira-barrera/"
   },
@@ -26,21 +26,39 @@ const eboardMembers: EBoardMember[] = [
     description: "Class of '27, Comp. Eng., Poli. Sci. & Econ. Experience: Investment Analyst @ Tenami Capital, IB Intern @ HSBC",
     imagePath: "/assets/imgs/portraits/leen_alshorafa.jpg",
     linkedinUrl: "https://www.linkedin.com/in/leenalshorafa/"
-
   },
   {
-    name: "Alexandra Paiz",
-    role: "Vice President",
-    description: "Class of '27, OR: Financial Engi. M&A Intern and Organizational Engineering at Grupo PDC, Family Office at Stonehage Fleming",
-    imagePath: "/assets/imgs/portraits/alexandra_paiz_delgado.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/alexandra-paiz-delgado-5b28b6241/"
+    name: "Sofia Torrecillas",
+    role: "Internal Vice President",
+    description: "Class of '28. Financial Economics. Former Investment Advisory Intern at Boa Vista Investimentos. Incoming Goldman Sachs PWM Summer Analyst.",
+    imagePath: "/assets/imgs/portraits/sofia_torecillas.png",
+    linkedinUrl: "https://www.linkedin.com/in/sofia-torrecillas-4b1834328/"
   },
   {
-    name: "Richard Li",
-    role: "Treasurer",
-    description: "Class of '28, Computer Science & Economics. Prior Experience: Data Scientist/Researcher at University of Washington and Caltech.",
-    imagePath: "/assets/imgs/portraits/richard_li.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/richardjdli/"
+    name: "Roman Annan",
+    role: "External Vice President",
+    description: "Class of '28, Financial Economics, Chemistry & Special Concentration in Business Management. Former Intern at SkyBridge Capital & SilverMile Capital.",
+    imagePath: "/assets/imgs/portraits/roman_annan.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/roman-annan/"
+  },
+  {
+    name: "Santiago Quintero",
+    role: "Head of Investment Management Division",
+    description: "Class of '29. Economics and Mathematics. Experience: Incoming Wealth Intern at Morgan Stanley",
+    imagePath: "/assets/imgs/portraits/santiago_quintero.png"
+  },
+  {
+    name: "Christopher O'Connell",
+    role: "Head of Financial Planning Division",
+    description: "Class of '28, Philosophy-Economics. Experience: Sales Executive at Mankind Marketing, Treasurer at Columbia Emerging Markets Society and Columbia Corporate Law and Business Association.",
+    imagePath: "/assets/imgs/portraits/christopher_oconnell.jpeg"
+  },
+  {
+    name: "Martin Bravo",
+    role: "Head of Financial Planning Division",
+    description: "Class of '27, OR: Financial Engineering, CS Minor. Prior Experience: Venture Partner @ Bullmont Capital, Operations Intern @ Newlab",
+    imagePath: "/assets/imgs/portraits/martin_bravo.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/martin-a-bravo/"
   },
   {
     name: "Dillon Ring",
@@ -50,26 +68,6 @@ const eboardMembers: EBoardMember[] = [
     linkedinUrl: "https://www.linkedin.com/in/dillonring/"
   },
   {
-    name: "Martin Bravo",
-    role: "Head of Private Banking Division",
-    description: "Class of '27, OR: Financial Engineering, CS Minor. Prior Experience: Venture Partner @ Bullmont Capital, Operations Intern @ Newlab",
-    imagePath: "/assets/imgs/portraits/martin_bravo.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/martin-a-bravo/"
-  },
-  {
-    name: "Christopher O'Connell",
-    role: "Head of Financial Planning Division",
-    description: "Class of '28, Philosophy-Economics. Experience: Sales Executive at Mankind Marketing, Treasurer at Columbia Emerging Markets Society and Columbia Corporate Law and Business Association.",
-    imagePath: "/assets/imgs/portraits/christopher_oconnell.jpeg"
-  },
-  {
-    name: "Sofia Torrecillas",
-    role: "Head of Investment Management Division",
-    description: "Class of '28, Financial Economics. Experience: Intern at LarrainVial, Chile, Research Assistant at Columbia University Economics Department",
-    imagePath: "/assets/imgs/portraits/sofia_torecillas.png",
-    linkedinUrl: "https://www.linkedin.com/in/sofia-torrecillas-4b1834328/"
-  },
-  {
     name: "Batuhan Yeltekin",
     role: "Director of Technology",
     description: "Class of '27, Computer Science & Economics. Prior Experience: IT Consulting Volunteer at EY, Project Assistant at KoçDigital",
@@ -77,25 +75,42 @@ const eboardMembers: EBoardMember[] = [
     linkedinUrl: "https://www.linkedin.com/in/batuhanyeltekin/"
   },
   {
+    name: "Amelie Brenninkmeijer",
+    role: "Director of Partnerships",
+    description: "Class of '28, Economics & Mathematics. Incoming Analyst at Bregal Investments. Former Private Equity Intern at Jerikho Investment Management.",
+    imagePath: "/assets/imgs/portraits/amelie_brenninkmeijer_v2.png"
+  },
+  {
+    name: "Jade Keogh",
+    role: "Secretary",
+    description: "Class of '26, Financial Economics. I coordinate and manage logistics for CUWMC, ensuring meetings and events run smoothly.",
+    imagePath: "/assets/imgs/portraits/jade_keogh.png"
+  },
+  {
+    name: "Charlotte Lorraine",
+    role: "Head of Marketing",
+    description: "Class of '29, Psychology and Economics. Experience: Intern for Blue Owl's GP Strategic Capital Group",
+    imagePath: "/assets/imgs/portraits/charlotte_lorraine_v2.png"
+  },
+  {
+    name: "Angelina Chen",
+    role: "Head of Bonding",
+    description: "Class of '29, Economics and Psychology; former Project Management and Sales Intern at Greenworks North America and China.",
+    imagePath: "/assets/imgs/portraits/angelina_chen_v2.png"
+  },
+  {
     name: "Alia Kafil",
-    role: "Director of Internal Affairs",
+    role: "Director of Logistics",
     description: "Class of '27, Financial Economics and Political Science, Corporate Legal Intern @ Dean Street Law, Incoming S&T Intern @ Barclays",
     imagePath: "/assets/imgs/portraits/alia_kafil.jpg",
     linkedinUrl: "https://www.linkedin.com/in/alia-kafil-090a8031b/"
   },
   {
-    name: "Roman Annan",
-    role: "Director of Partnerships",
-    description: "Class of '28, Financial Economics, Chemistry. Investment Analyst @ SkyBridge Capital, Program Manager at Young Entrepreneurship Program (YEP!)",
-    imagePath: "/assets/imgs/portraits/roman_annan.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/roman-annan/"
-  },
-  {
-    name: "Constance Daudebourg",
-    role: "Head of Digital Strategy",
-    description: "Class of '27, Political Economy. Prior Experience: Financial Law Intern @ EY",
-    imagePath: "/assets/imgs/portraits/constance_daudebourg.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/constance-daudebourg-8b98671bb/"
+    name: "Richard Li",
+    role: "Treasurer",
+    description: "Class of '28, Computer Science & Economics. Prior Experience: Data Scientist/Researcher at University of Washington and Caltech.",
+    imagePath: "/assets/imgs/portraits/richard_li.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/richardjdli/"
   }
 ]
 
@@ -130,7 +145,7 @@ export default function EBoardPage() {
                     src={member.imagePath}
                     alt={member.name}
                     className={`w-full h-full object-cover hover:scale-105 transition-transform duration-300 ${
-                      member.name === "Christopher O'Connell" ? 'object-top scale-110' : ''
+                      member.name === "Christopher O'Connell" || member.name === "Santiago Quintero" || member.name === "Charlotte Lorraine" ? 'object-top scale-110' : ''
                     }`}
                   />
                 </div>
