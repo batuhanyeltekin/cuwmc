@@ -4,6 +4,7 @@ import Link from 'next/link'
 
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
+import PresentationCarousel from '../../components/PresentationCarousel'
 
 export default function DivisionsPage() {
   return (
@@ -21,6 +22,9 @@ export default function DivisionsPage() {
               Our analysts are split into three divisions that produce research and deliver presentations, open to attendance by all Columbia students.
             </p>
           </div>
+
+          {/* Past presentation titles — rotating carousel */}
+          <PresentationCarousel />
 
           {/* Investment Management Division */}
           <div className="mb-20">

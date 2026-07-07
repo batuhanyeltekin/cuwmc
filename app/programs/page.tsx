@@ -29,7 +29,7 @@ const programs: ProgramInfo[] = [
   },
   {
     id: 'past-events',
-    title: 'Past Events',
+    title: 'Some of Our Past Events',
     content: 'CUWMC has hosted numerous successful events, from educational panels with industry professionals to exciting trips and collaborative initiatives. These events showcase our commitment to providing valuable experiences and networking opportunities for our members and the broader Columbia community.'
   }
 ]
