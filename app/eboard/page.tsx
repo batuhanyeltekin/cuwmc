@@ -6,6 +6,12 @@ import Footer from '../../components/Footer'
 import EboardCard from '../../components/EboardCard'
 import { eboardMembers, eboardTiers } from '../../data/eboard'
 
+const presidentEmeriti = [
+  'Anghelo Adrian Chavira-Barrera',
+  'Leen Alawi Alshorafa',
+  'Kyle Shrader',
+]
+
 // Cards render 4-across on desktop in data-file order, grouped under tier
 // headings; partial rows center themselves. Edit data/eboard.ts to change
 // people or ordering.
@@ -50,6 +56,22 @@ export default function EBoardPage() {
               </div>
             )
           })}
+
+          <div className="mt-16 border-t border-gray-200 pt-2">
+            <p className="mt-12 mb-6 text-center font-garamond text-sm font-semibold uppercase tracking-[0.16em] text-cuwmc-accent">
+              President Emeriti
+            </p>
+            <ul className="flex flex-wrap justify-center gap-x-10 gap-y-2">
+              {presidentEmeriti.map((name) => (
+                <li
+                  key={name}
+                  className="font-garamond text-lg text-cuwmc-primary"
+                >
+                  {name}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 

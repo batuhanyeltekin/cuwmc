@@ -20,12 +20,9 @@ const programs: ProgramInfo[] = [
     content: "Each analyst at the Columbia Undergraduate Wealth Management Club will actively contribute to research throughout the semester, focusing on topics central to the fields of Investment Management, Private Banking, and Financial Planning. Analysts will work individually and in teams to explore industry trends, evaluate investment strategies, and analyze case studies that reflect real-world client scenarios. In Investment Management, they will study portfolio construction, asset allocation, and performance evaluation across different market environments. Within Private Banking, analysts will examine the role of relationship management, tailored financial solutions, and high-net-worth client services. On the Financial Planning side, they will research retirement planning, tax optimization, and wealth transfer strategies. By engaging with these interconnected areas, each analyst will not only sharpen their technical and analytical skills but also develop a holistic understanding of wealth management, ultimately contributing to the club’s collective output of research-driven insights."
   },
   {
-    id: 'the-fund',
-    title: 'The Fund',
-    content: 'The Fund is a paper-trading portfolio built on second-order thinking, risk consciousness, and principles of anti-fragility. By applying disciplined capital allocation and rigorous risk premia pricing, it aims to create resilient portfolios capable of navigating diverse market conditions. As the capstone of CUWMC\'s Investment Management Division pipeline, it transforms years of research into practice within a live, simulated market environment.',
-    hasLink: true,
-    linkUrl: 'https://thefund.columbiawm.org/',
-    linkText: 'Click here for The Fund website.'
+    id: 'aladdin-portfolio-program',
+    title: 'Aladdin Portfolio Program',
+    content: 'The Aladdin Portfolio Program gives analysts hands-on experience with BlackRock\'s Aladdin, the risk and portfolio analytics platform used across the asset management industry. Guided by second-order thinking, risk consciousness, and principles of anti-fragility, analysts construct and stress-test model portfolios, price risk premia, and evaluate allocation decisions across diverse market conditions. As the capstone of CUWMC\'s Investment Management Division pipeline, the program turns semesters of research into institutional-grade portfolio analysis.'
   },
   {
     id: 'past-events',
@@ -57,7 +54,7 @@ export default function ProgramsPage() {
             </h1>
             <div className="w-20 h-1 bg-cuwmc-secondary mx-auto"></div>
             <p className="text-xl text-gray-600 mt-6 max-w-4xl mx-auto font-garamond leading-relaxed">
-              CUWMC offers a plethora of programs for its analysts, which includes semester research, paper trading through "The Fund," and team/club-wide social bonding.
+              CUWMC offers a plethora of programs for its analysts, which includes semester research, hands-on portfolio analytics on BlackRock's Aladdin, and team/club-wide social bonding.
             </p>
           </div>
 
@@ -98,8 +95,8 @@ export default function ProgramsPage() {
                     {program.title}
                   </h3>
                   
-                  {/* BlackRock Logo for The Fund */}
-                  {program.id === 'the-fund' && (
+                  {/* BlackRock Logo for the Aladdin Portfolio Program */}
+                  {program.id === 'aladdin-portfolio-program' && (
                     <div className="flex justify-center mb-6">
                       <img 
                         src="/assets/imgs/company_logos/BlackRock_wordmark.svg.png" 

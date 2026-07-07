@@ -151,13 +151,11 @@ export default function About() {
           <SectionHeading title="Partners" className="mb-16" />
 
           <div className="flex items-center justify-center gap-16 md:gap-24">
-            <button onClick={() => window.open('https://thefund.columbiawm.org/', '_blank')}>
-              <img
-                src="/assets/imgs/company_logos/BlackRock_wordmark.svg.png"
-                alt="BlackRock"
-                className="h-12 w-auto object-contain grayscale transition-all duration-300 hover:grayscale-0 md:h-16"
-              />
-            </button>
+            <img
+              src="/assets/imgs/company_logos/BlackRock_wordmark.svg.png"
+              alt="BlackRock"
+              className="h-12 w-auto object-contain grayscale transition-all duration-300 hover:grayscale-0 md:h-16"
+            />
             <img
               src="/assets/imgs/company_logos/pwm_official_partner.PNG"
               alt="PWM Official Partner"

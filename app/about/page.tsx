@@ -61,7 +61,7 @@ export default function AboutPage() {
                   At CUWMC, we give undergraduates the tools and experiences to understand asset and wealth management at a professional level. Our work is organized across three divisions: Investment Management, Financial Planning, and Private Banking, each offering students the opportunity to delve into research, strategy, and client-facing skills.
                 </p>
                 <p>
-                  We run a 9-week Securities Industry Essentials (SIE) training program, operate a paper-trading fund powered by BlackRock's Aladdin platform, and host our flagship "Wealth Management Week," where analysts present semester-long research to the broader Columbia community.
+                  We run a 9-week Securities Industry Essentials (SIE) training program, operate a portfolio analytics program on BlackRock's Aladdin platform, and host our flagship "Wealth Management Week," where analysts present semester-long research to the broader Columbia community.
                 </p>
                 <p>
                   Through workshops, speaker events, and direct access to industry platforms, our members bridge the gap between theory and practice, preparing for careers in asset management, banking, and beyond.
