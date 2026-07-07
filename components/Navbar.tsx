@@ -22,9 +22,11 @@ export default function Navbar() {
   const closeMenu = () => setIsMenuOpen(false)
 
   return (
-    <nav 
+    <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-cuwmc-primary' : 'bg-cuwmc-primary-transparent'
+        isScrolled
+          ? 'bg-cuwmc-primary shadow-lg border-b border-white/10'
+          : 'bg-cuwmc-primary-transparent'
       } backdrop-blur-md`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -71,7 +73,11 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Navigation */}
-      <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
+      <div
+        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+          isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+        }`}
+      >
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-cuwmc-primary">
           <a href="/about" className="mobile-nav-link" onClick={closeMenu}>About</a>
           <a href="/eboard" className="mobile-nav-link" onClick={closeMenu}>E-Board</a>

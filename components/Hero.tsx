@@ -26,18 +26,32 @@ export default function Hero() {
           <p className="text-xl md:text-2xl text-gray-100 leading-relaxed font-garamond max-w-4xl mx-auto drop-shadow-md animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             Empowering the next generation of financial leaders through education, networking, and hands-on experience in wealth management.
           </p>
-          {/* <button
-            onClick={() =>
-              window.open(
-                'https://docs.google.com/forms/d/e/1FAIpQLSeSwGMr2kkLNdiYMCpJMdbNvF3blSfzafTF5mQdOYdzD9r_EA/viewform',
-                '_blank'
-              )
-            }
-            className="inline-block bg-cuwmc-primary text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-transparent hover:text-white border-2 border-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg font-garamond backdrop-blur-sm animate-fade-in-up"
+
+          {/* Recruitment CTA — disabled until applications open in September */}
+          <div
+            className="flex flex-col items-center gap-3 pt-2 animate-fade-in-up"
             style={{ animationDelay: '0.4s' }}
           >
-            Apply for Spring 2026 Recruitment
-          </button> */}
+            <div className="group relative inline-block">
+              <button
+                type="button"
+                disabled
+                aria-disabled="true"
+                aria-label="Fall 2026 Recruitment — applications open in September"
+                className="inline-block cursor-not-allowed rounded-full border-2 border-white/50 bg-white/5 px-8 py-4 font-garamond text-lg font-semibold text-white/70 line-through decoration-2 backdrop-blur-sm"
+              >
+                Fall 2026 Recruitment
+              </button>
+              {/* Desktop hover tooltip */}
+              <span className="pointer-events-none absolute left-1/2 top-full mt-3 hidden -translate-x-1/2 whitespace-nowrap rounded-lg bg-cuwmc-primary px-4 py-2 font-garamond text-sm font-medium text-white opacity-0 shadow-lg transition-opacity duration-300 group-hover:opacity-100 md:block">
+                Check back in September
+              </span>
+            </div>
+            {/* Mobile caption (hover isn't available on touch) */}
+            <p className="font-garamond text-sm text-gray-200 md:hidden">
+              Check back in September
+            </p>
+          </div>
         </div>
       </div>
 

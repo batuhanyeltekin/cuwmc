@@ -10,17 +10,13 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Font family is set via Tailwind (font-garamond on <body> in layout.tsx);
+   everything else inherits, so no blanket !important rules are needed. */
 body {
-  font-family: 'EB Garamond', Georgia, serif !important;
   font-weight: 400;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-/* Ensure all text elements use EB Garamond with fallbacks */
-h1, h2, h3, h4, h5, h6, p, span, div, a, button, input, textarea, label {
-  font-family: 'EB Garamond', Georgia, serif !important;
 }
 
 /* Custom scrollbar */
@@ -41,32 +37,36 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, button, input, textarea, label {
   background: #2d3a5f;
 }
 
-/* Company logos carousel animation - Seamless infinite loop */
-@keyframes scroll {
+/* Seamless logo marquee — the track holds two copies of the logo set and
+   slides by -50%, so it loops regardless of logo count or width. */
+@keyframes marquee {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 7));
+    transform: translateX(-50%);
   }
 }
 
-.animate-scroll {
-  animation: scroll 30s linear infinite;
+.marquee-track {
+  animation: marquee 40s linear infinite;
 }
 
-.animate-scroll-slow {
-  animation: scroll 60s linear infinite;
+/* Slower variant for the wider presentation-title carousel */
+.marquee-track-slow {
+  animation: marquee 70s linear infinite;
 }
 
-.animate-scroll-fast {
-  animation: scroll 40s linear infinite;
-}
-
-.animate-scroll:hover,
-.animate-scroll-slow:hover,
-.animate-scroll-fast:hover {
+.marquee:hover .marquee-track,
+.marquee:hover .marquee-track-slow {
   animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track,
+  .marquee-track-slow {
+    animation: none;
+  }
 }
 
 /* Custom component styles */
@@ -105,4 +105,24 @@ h1, h2, h3, h4, h5, h6, p, span, div, a, button, input, textarea, label {
 .mobile-nav-link {
   @apply block px-3 py-2 text-base font-medium text-white hover:text-cuwmc-secondary transition-colors duration-300;
   font-family: 'EB Garamond', Georgia, serif !important;
+}
+
+/* Footer links: underline-grow on hover, matching the navbar treatment */
+.footer-link {
+  @apply relative text-gray-300 transition-colors duration-300 hover:text-cuwmc-secondary;
+}
+
+.footer-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #ffd700;
+  transition: width 0.3s ease;
+}
+
+.footer-link:hover::after {
+  width: 100%;
 }

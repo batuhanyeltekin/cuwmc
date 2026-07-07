@@ -69,6 +69,36 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
+
+          {/* Alumni Placements */}
+          <div className="border-t border-gray-200 pt-20">
+            <div className="mb-16 text-center">
+              <h2 className="mb-4 font-garamond text-3xl font-bold text-cuwmc-primary md:text-4xl">
+                Alumni Placements
+              </h2>
+              <div className="mx-auto h-1 w-20 bg-cuwmc-secondary" />
+            </div>
+
+            <div className="grid grid-cols-2 items-center justify-items-center gap-8 md:grid-cols-4 lg:grid-cols-8">
+              <img src="/assets/imgs/company_logos/barclays-3-e1748366367942.png" alt="Barclays" style={{ height: '160px', width: 'auto' }} className="object-contain" />
+              <img src="/assets/imgs/company_logos/BlackRock_wordmark.svg.png" alt="BlackRock" style={{ height: '160px', width: 'auto' }} className="object-contain" />
+              <img src="/assets/imgs/company_logos/Citi.svg.png" alt="Citi" style={{ height: '80px', width: 'auto' }} className="object-contain" />
+              <img src="/assets/imgs/company_logos/gs.png" alt="Goldman Sachs" style={{ height: '160px', width: 'auto' }} className="object-contain" />
+              <img src="/assets/imgs/company_logos/HSBC_Logo_2018.png" alt="HSBC" style={{ height: '160px', width: 'auto' }} className="object-contain" />
+              <img src="/assets/imgs/company_logos/jpm.png" alt="JPMorgan Chase" style={{ height: '160px', width: 'auto' }} className="object-contain" />
+              <img src="/assets/imgs/company_logos/Morgan_Stanley_Logo_1.svg" alt="Morgan Stanley" style={{ height: '160px', width: 'auto' }} className="object-contain" />
+              <img src="/assets/imgs/company_logos/ubs.png" alt="UBS" style={{ height: '160px', width: 'auto' }} className="object-contain" />
+              <div className="col-span-full flex w-full justify-center">
+                <img
+                  src="/assets/imgs/company_logos/nasa.png"
+                  alt="NASA"
+                  title="Yes, we actually have a CUWMC board member who is interning at NASA. #cuwmcstrong #wealthmanagingspace"
+                  style={{ height: '160px', width: 'auto' }}
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

@@ -1,195 +1,172 @@
 'use client'
 
 import React from 'react'
+import SectionHeading from './SectionHeading'
+
+const divisions = [
+  {
+    name: 'Investment Management Division (IMD)',
+    image: '/assets/imgs/imd.png',
+    blurb:
+      'Analysts research and develop investment theses, portfolio allocation, and trading strategies spanning traditional asset classes, alternative investments, and ESG. IMD also manages a portfolio on BlackRock’s Aladdin platform.',
+    teams: ['Core Markets', 'Private Markets', 'Disruptive Markets'],
+    imageLeft: true,
+  },
+  {
+    name: 'Private Banking Division (PBD)',
+    image: '/assets/imgs/pbd.png',
+    blurb:
+      'Analysts study the services that define private wealth management — credit and lending solutions, foreign exchange, concierge and lifestyle offerings, and cash management — and how banks serve ultra-high-net-worth clients.',
+    teams: ['Emerging Trends', 'Wealth Strategies', 'Client Relationship'],
+    imageLeft: false,
+  },
+  {
+    name: 'Financial Planning Division (FPD)',
+    image: '/assets/imgs/fpd.png',
+    blurb:
+      'Analysts explore the full arc of personal finance and estate planning — philanthropy, tax strategy, inheritance, wills and trusts, and retirement — building comprehensive plans tailored to individual goals and timelines.',
+    teams: ['Philanthropy', 'Personal Finance', 'Tax Planning'],
+    imageLeft: true,
+  },
+]
+
+const stats = [
+  {
+    figure: '3',
+    label: 'Divisions',
+    detail:
+      'Our analysts are split into three divisions that produce research and deliver presentations, open to all Columbia students.',
+  },
+  {
+    figure: '9',
+    label: 'Weeks of Training',
+    detail:
+      'Nine weeks of educational programming prepare new analysts to get certified on the SIE® by FINRA® — the only such program among Columbia finance clubs.',
+  },
+  {
+    figure: '9',
+    label: 'Specialist Teams',
+    detail:
+      'Three specialist teams inside each division let analysts go deep on a focused corner of wealth and asset management.',
+  },
+]
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-white relative">
+    <section id="about" className="relative bg-white py-20">
       {/* Top border accent */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-cuwmc-primary via-cuwmc-secondary to-cuwmc-primary"></div>
-      
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-cuwmc-primary mb-4 font-garamond">
-            About CUWMC
-          </h2>
-          <div className="w-20 h-1 bg-cuwmc-secondary mx-auto"></div>
-        </div>
+      <div className="absolute left-0 right-0 top-0 h-1 bg-gradient-to-r from-cuwmc-primary via-cuwmc-secondary to-cuwmc-primary" />
+
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <SectionHeading title="About CUWMC" className="mb-16" />
 
         <div className="space-y-12">
-          {/* Main Content */}
-          <div className="space-y-6">
-            <p className="text-xl text-gray-600 leading-relaxed font-garamond text-center max-w-4xl mx-auto">
-              CUWMC is the leading student organization at Columbia University dedicated to Asset and Wealth Management. We specialize in investment and client relationship strategies through our three main divisions: Investment Management, Financial Planning, and Private Banking.
-            </p>
-          </div>
+          <p className="mx-auto max-w-4xl text-center font-garamond text-xl leading-relaxed text-gray-600">
+            Founded on the motto <b>&ldquo;learning through teaching,&rdquo;</b>{' '}
+            CUWMC is Columbia&rsquo;s leading student organization dedicated to
+            Asset and Wealth Management. We bridge the financial-literacy gap
+            across campus through accessible education, hands-on research, and
+            industry access &mdash; training the next generation of finance
+            leaders across our three divisions: Investment Management, Private
+            Banking, and Financial Planning.
+          </p>
 
-          {/* Statistics - Now horizontal under the paragraph */}
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="bg-gray-50 p-8 rounded-2xl text-center hover:transform hover:-translate-y-2 transition-all duration-300 hover:shadow-lg border border-gray-100">
-              <h3 className="text-4xl font-bold text-cuwmc-primary mb-2 font-garamond">3</h3>
-              <p className="text-lg text-gray-600 font-garamond mb-3">Divisions</p>
-              <p className="text-base text-gray-500 font-garamond leading-relaxed">
-                Our analysts are split into <b> three divisions </b> that produce research and deliver presentations, open to attendance by all Columbia students.
-              </p>
-            </div>
-            <div className="bg-gray-50 p-8 rounded-2xl text-center hover:transform hover:-translate-y-2 transition-all duration-300 hover:shadow-lg border border-gray-100">
-              <h3 className="text-4xl font-bold text-cuwmc-primary mb-2 font-garamond">9</h3>
-              <p className="text-lg text-gray-600 font-garamond mb-3">Weeks of Training</p>
-              <p className="text-base text-gray-500 font-garamond leading-relaxed">
-                We offer <b>nine</b> weeks of educational programming for new analysts to get certified on the SIE® by FINRA®.
-              </p>
-            </div>
-            <div className="bg-gray-50 p-8 rounded-2xl text-center hover:transform hover:-translate-y-2 transition-all duration-300 hover:shadow-lg border border-gray-100">
-              <h3 className="text-4xl font-bold text-cuwmc-primary mb-2 font-garamond">10</h3>
-              <p className="text-lg text-gray-600 font-garamond mb-3">Specialist Teams</p>
-              <p className="text-base text-gray-500 font-garamond leading-relaxed">
-                Our <b>rigorous</b> interview process ensures our alumni secure offers at Wall Street's top firms.
-              </p>
-            </div>
+          {/* Statistics */}
+          <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-3">
+            {stats.map((stat) => (
+              <div
+                key={stat.label}
+                className="rounded-2xl border border-gray-100 bg-gray-50 p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
+              >
+                <h3 className="mb-2 font-garamond text-4xl font-bold text-cuwmc-primary">
+                  {stat.figure}
+                </h3>
+                <p className="mb-3 font-garamond text-lg text-gray-600">
+                  {stat.label}
+                </p>
+                <p className="font-garamond text-base leading-relaxed text-gray-500">
+                  {stat.detail}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
 
-      {/* Our Analyst Divisions Section */}
-      <div className="mt-20 pt-20 border-t border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold text-cuwmc-primary mb-4 font-garamond">
-              Our Analyst Divisions
-            </h2>
-            <div className="w-20 h-1 bg-cuwmc-secondary mx-auto"></div>
-          </div>
+      {/* Our Analyst Divisions */}
+      <div className="mt-20 border-t border-gray-200 pt-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeading title="Our Analyst Divisions" className="mb-20" />
 
-          {/* Division 1: Investment Management Division - Image Left, Text Right */}
-          <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
-            <div className="order-2 lg:order-1">
-              <img 
-                src="/assets/imgs/imd.png" 
-                alt="Investment Management Division" 
-                className="w-full h-96 object-cover rounded-2xl shadow-xl"
-              />
+          {divisions.map((division, index) => (
+            <div
+              key={division.name}
+              className={`grid items-center gap-16 lg:grid-cols-2 ${
+                index < divisions.length - 1 ? 'mb-24' : ''
+              }`}
+            >
+              <div className={division.imageLeft ? 'order-2 lg:order-1' : ''}>
+                <img
+                  src={division.image}
+                  alt={division.name}
+                  className="h-96 w-full rounded-2xl object-cover shadow-xl"
+                />
+              </div>
+              <div
+                className={`space-y-6 ${
+                  division.imageLeft ? 'order-1 lg:order-2' : ''
+                }`}
+              >
+                <h3 className="font-garamond text-4xl font-bold text-cuwmc-primary">
+                  {division.name}
+                </h3>
+                <p className="font-garamond text-xl leading-relaxed text-gray-600">
+                  {division.blurb}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {division.teams.map((team) => (
+                    <span
+                      key={team}
+                      className="rounded-full border border-cuwmc-primary/15 bg-cuwmc-primary/5 px-4 py-1.5 font-garamond text-sm font-medium text-cuwmc-primary"
+                    >
+                      {team}
+                    </span>
+                  ))}
+                </div>
+                <a
+                  href="/divisions"
+                  className="inline-block rounded-lg bg-cuwmc-primary px-8 py-4 font-garamond text-lg font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-cuwmc-primary/90 hover:shadow-lg"
+                >
+                  Learn More
+                </a>
+              </div>
             </div>
-            <div className="order-1 lg:order-2 space-y-8">
-              <h3 className="text-4xl font-bold text-cuwmc-primary font-garamond">
-                Investment Management Division (IMD)
-              </h3>
-              <p className="text-xl text-gray-600 leading-relaxed font-garamond">
-                Analysts research and develop investment theses, portfolio allocation and trading strategies, spanning traditional asset classes, alternative investments, and ESG.
-              </p>
-              <button className="bg-cuwmc-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-cuwmc-primary/90 transition-all duration-300 font-garamond text-lg">
-                Learn More
-              </button>
-            </div>
-          </div>
-
-          {/* Division 2: Private Banking Division - Image Right, Text Left */}
-          <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
-            <div className="space-y-8">
-              <h3 className="text-4xl font-bold text-cuwmc-primary font-garamond">
-                Private Banking Division (PBD)
-              </h3>
-              <p className="text-xl text-gray-600 leading-relaxed font-garamond">
-                Analysts gain a thorough understanding on client solutions in the wealth management industry and gain valuable insights on private banking methods like credit and lending solutions, foreign exchange services, concierge and lifestyle offerings, and cash management techniques.
-              </p>
-              <button className="bg-cuwmc-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-cuwmc-primary/90 transition-all duration-300 font-garamond text-lg">
-                Learn More
-              </button>
-            </div>
-            <div>
-              <img 
-                src="/assets/imgs/pbd.png" 
-                alt="Private Banking Division" 
-                className="w-full h-96 object-cover rounded-2xl shadow-xl"
-              />
-            </div>
-          </div>
-
-          {/* Division 3: Financial Planning Division - Image Left, Text Right */}
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="order-2 lg:order-1">
-              <img 
-                src="/assets/imgs/fpd.png" 
-                alt="Financial Planning Division" 
-                className="w-full h-96 object-cover rounded-2xl shadow-xl"
-              />
-            </div>
-            <div className="order-1 lg:order-2 space-y-8">
-              <h3 className="text-4xl font-bold text-cuwmc-primary font-garamond">
-                Financial Planning Division (FPD)
-              </h3>
-              <p className="text-xl text-gray-600 leading-relaxed font-garamond">
-                Analysts delve into a wide range of estate planning topics including philanthropy, tax strategies, inheritence, wills and trusts, and retirement planning.
-              </p>
-              <button className="bg-cuwmc-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-cuwmc-primary/90 transition-all duration-300 font-garamond text-lg">
-                Learn More
-              </button>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
 
-      {/* PARTNERS Section */}
-      <div className="mt-20 pt-20 border-t border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-cuwmc-primary mb-4 font-garamond">
-              Partners
-            </h2>
-            <div className="w-20 h-1 bg-cuwmc-secondary mx-auto"></div>
-          </div>
-          
-          <div className="flex justify-center items-center gap-16 md:gap-24">
+      {/* Partners */}
+      <div className="mt-20 border-t border-gray-200 pt-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeading title="Partners" className="mb-16" />
+
+          <div className="flex items-center justify-center gap-16 md:gap-24">
             <button onClick={() => window.open('https://thefund.columbiawm.org/', '_blank')}>
-                <img 
-              src="/assets/imgs/company_logos/BlackRock_wordmark.svg.png" 
-              alt="BlackRock" 
-              className="h-12 md:h-16 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-            />
+              <img
+                src="/assets/imgs/company_logos/BlackRock_wordmark.svg.png"
+                alt="BlackRock"
+                className="h-12 w-auto object-contain grayscale transition-all duration-300 hover:grayscale-0 md:h-16"
+              />
             </button>
-            <img 
-              src="/assets/imgs/company_logos/pwm_official_partner.PNG" 
-              alt="PWM Official Partner" 
-              className="h-24 md:h-32 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+            <img
+              src="/assets/imgs/company_logos/pwm_official_partner.PNG"
+              alt="PWM Official Partner"
+              className="h-24 w-auto object-contain grayscale transition-all duration-300 hover:grayscale-0 md:h-32"
             />
           </div>
         </div>
       </div>
 
-      {/* ALUMNI PLACEMENTS Section */}
-      <div className="mt-20 pt-20 border-t border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-cuwmc-primary mb-4 font-garamond">
-              Alumni Placements
-            </h2>
-            <div className="w-20 h-1 bg-cuwmc-secondary mx-auto"></div>
-          </div>
-        </div>
-        
-                {/* Static Logo Display */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 items-center justify-items-center">
-            <img src="/assets/imgs/company_logos/barclays-3-e1748366367942.png" alt="Barclays" style={{ height: '160px', width: 'auto' }} className="object-contain" />
-            <img src="/assets/imgs/company_logos/BlackRock_wordmark.svg.png" alt="BlackRock" style={{ height: '160px', width: 'auto' }} className="object-contain" />
-            <img src="/assets/imgs/company_logos/Citi.svg.png" alt="Citi" style={{ height: '80px', width: 'auto' }} className="object-contain" />
-            <img src="/assets/imgs/company_logos/gs.png" alt="Goldman Sachs" style={{ height: '160px', width: 'auto' }} className="object-contain" />
-            <img src="/assets/imgs/company_logos/HSBC_Logo_2018.png" alt="HSBC" style={{ height: '160px', width: 'auto' }} className="object-contain" />
-            <img src="/assets/imgs/company_logos/jpm.png" alt="JPMorgan Chase" style={{ height: '160px', width: 'auto' }} className="object-contain" />
-            <img src="/assets/imgs/company_logos/Morgan_Stanley_Logo_1.svg" alt="Morgan Stanley" style={{ height: '160px', width: 'auto' }} className="object-contain" />
-            <img src="/assets/imgs/company_logos/ubs.png" alt="UBS" style={{ height: '160px', width: 'auto' }} className="object-contain" />
-            <div className="col-span-full flex justify-center w-full">
-              <img 
-                src="/assets/imgs/company_logos/nasa.png" 
-                alt="NASA" 
-                title="Yes, we actually have a CUWMC board member who is interning at NASA. #cuwmcstrong #wealthmanagingspace"
-                style={{ height: '160px', width: 'auto' }} 
-                className="object-contain" 
-              />
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
   )
 }

@@ -23,32 +23,12 @@ export default function Footer() {
               Quick Links
             </h4>
             <ul className="space-y-2">
-              <li>
-                              <a href="/about" className="text-gray-300 hover:text-cuwmc-secondary transition-colors">
-                About
-              </a>
-              </li>
-              
-              <li>
-                <a href="/eboard" className="text-gray-300 hover:text-cuwmc-secondary transition-colors">
-                  E-Board
-                </a>
-              </li>
-              <li>
-                <a href="/programs" className="text-gray-300 hover:text-cuwmc-secondary transition-colors">
-                  Programs
-                </a>
-              </li>
-              <li>
-                              <a href="/divisions" className="text-gray-300 hover:text-cuwmc-secondary transition-colors">
-                Divisions
-              </a>
-              </li>
-              <li>
-                              <a href="/recruitment" className="text-gray-300 hover:text-cuwmc-secondary transition-colors">
-                Recruitment
-              </a>
-              </li>
+              <li><a href="/about" className="footer-link">About</a></li>
+              <li><a href="/eboard" className="footer-link">E-Board</a></li>
+              <li><a href="/programs" className="footer-link">Programs</a></li>
+              <li><a href="/divisions" className="footer-link">Divisions</a></li>
+              <li><a href="/recruitment" className="footer-link">Recruitment</a></li>
+              <li><a href="/pwmpathway" className="footer-link">PWM Pathway</a></li>
             </ul>
           </div>
 
@@ -83,7 +63,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8 text-center">
           <p className="text-gray-400">
-            © 2026 Columbia Undergraduate Wealth Management Club. All rights reserved. Made with ❤️ by Batuhan Yeltekin.
+            © {new Date().getFullYear()} Columbia Undergraduate Wealth Management Club. All rights reserved.
           </p>
         </div>
       </div>
