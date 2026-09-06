@@ -42,7 +42,7 @@ export const recruitmentTimeline: TimelineEvent[] = [
   },
   {
     label: 'Activities Fair',
-    date: 'Thursday–Friday, September 10–11',
+    date: 'Friday, September 11 · 12:00–4:00 PM',
     detail: 'Come find our table and meet the board.',
   },
   {
