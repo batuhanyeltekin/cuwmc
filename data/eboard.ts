@@ -28,7 +28,7 @@ export const eboardMembers: EBoardMember[] = [
     role: 'Co-President',
     tier: 'Executive Leadership',
     description:
-      "Class of '28, Financial Economics, Chemistry, and Concentration in Business Management. Former Intern at Ascension & SkyBridge Capital. Incoming Private Equity Summer Analyst at StepStone Group.",
+      "Class of '28, Financial Economics and Special Concentration in Business Management. Former Intern at Ascension & SkyBridge Capital. Incoming Private Equity Summer Analyst at StepStone Group.",
     imagePath: '/assets/imgs/portraits/roman_annan_web.jpg',
     linkedinUrl: 'https://www.linkedin.com/in/roman-annan/',
   },
@@ -79,7 +79,8 @@ export const eboardMembers: EBoardMember[] = [
     name: 'Eli Dubin-Ramos',
     role: 'Private Banking Division Co-Head',
     tier: 'Division Leadership',
-    description: "Class of '28, Columbia College.",
+    description:
+      "Class of '28, Columbia College. Visitor Services Assistant at The Frick Collection and former Impressionist and Modern Art Intern at Christie's.",
     imagePath: '/assets/imgs/portraits/eli_dubin-ramos_web.jpg',
   },
   {
@@ -91,12 +92,12 @@ export const eboardMembers: EBoardMember[] = [
     imagePath: '/assets/imgs/portraits/marco_sit_web.jpg',
   },
   {
-    name: 'Dylan Wang',
+    name: 'Akansha Gupta',
     role: 'Investment Management Division Co-Head',
     tier: 'Division Leadership',
     description:
-      "Class of '29, Operations Research–Financial Engineering & AI Minor. WM Intern at Lyons, VC Intern at IgniteXL, and Staff Writer at Columbia Emerging Markets Review.",
-    imagePath: '/assets/imgs/portraits/dylan_wang_web.jpg',
+      "Class of '28, Barnard College, Economics–Statistics. Former Technology Private Equity Analyst at Zeus Global and Asset Management Analyst at Kotak Alternate Asset Managers.",
+    imagePath: '/assets/imgs/portraits/akansha_gupta_web.jpg',
   },
   {
     name: 'Charlotte Lorraine',
@@ -124,15 +125,6 @@ export const eboardMembers: EBoardMember[] = [
   },
 
   // ─── Directors ──────────────────────────────────────────────────────────
-  {
-    name: 'Dillon Ring',
-    role: 'Director of Education',
-    tier: 'Directors',
-    description:
-      "Class of '28, Financial Economics & Jazz. Former WM Research at D.A. Davidson.",
-    imagePath: '/assets/imgs/portraits/dillon_ring_web.jpg',
-    linkedinUrl: 'https://www.linkedin.com/in/dillonring/',
-  },
   {
     name: 'Luciana Piro',
     role: 'Director of Digital Strategy & Growth',

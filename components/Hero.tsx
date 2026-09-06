@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import Link from 'next/link'
 
 export default function Hero() {
   return (
@@ -27,29 +28,20 @@ export default function Hero() {
             Empowering the next generation of financial leaders through education, networking, and hands-on experience in wealth management.
           </p>
 
-          {/* Recruitment CTA — disabled until applications open in September */}
+          {/* Recruitment CTA — live for Fall '26 */}
           <div
             className="flex flex-col items-center gap-3 pt-2 animate-fade-in-up"
             style={{ animationDelay: '0.4s' }}
           >
-            <div className="group relative inline-block">
-              <button
-                type="button"
-                disabled
-                aria-disabled="true"
-                aria-label="Fall 2026 Recruitment — applications open in September"
-                className="inline-block cursor-not-allowed rounded-full border-2 border-white/50 bg-white/5 px-8 py-4 font-garamond text-lg font-semibold text-white/70 line-through decoration-2 backdrop-blur-sm"
-              >
-                Fall 2026 Recruitment
-              </button>
-              {/* Desktop hover tooltip */}
-              <span className="pointer-events-none absolute left-1/2 top-full mt-3 hidden -translate-x-1/2 whitespace-nowrap rounded-lg bg-cuwmc-primary px-4 py-2 font-garamond text-sm font-medium text-white opacity-0 shadow-lg transition-opacity duration-300 group-hover:opacity-100 md:block">
-                Check back in September
-              </span>
-            </div>
-            {/* Mobile caption (hover isn't available on touch) */}
-            <p className="font-garamond text-sm text-gray-200 md:hidden">
-              Check back in September
+            <Link
+              href="/recruitment"
+              aria-label="Fall 2026 Recruitment — timeline, coffee chats, and application"
+              className="inline-block rounded-full border-2 border-cuwmc-secondary bg-cuwmc-secondary px-8 py-4 font-garamond text-lg font-semibold text-cuwmc-primary shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-transparent hover:text-cuwmc-secondary hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+            >
+              Fall 2026 Recruitment
+            </Link>
+            <p className="font-garamond text-sm text-gray-200">
+              Applications open Tuesday, September 8
             </p>
           </div>
         </div>
