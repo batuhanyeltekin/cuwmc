@@ -32,7 +32,7 @@ export default function RecruitmentPage() {
                 </p>
                 
                 <p className="text-sm text-gray-600 italic leading-relaxed font-garamond">
-                  Disclaimer: CUWMC is not an investment banking group or a student-managed investment fund. As a club, we do not actively manage money on behalf of individuals or institutions. Our focus is on Private Wealth Management, which emphasizes the relationship-driven, personal side of finance. We offer education and resources to help students with recruiting and to deepen their understanding of investment concepts. Our activities are purely educational and intended to prepare students for careers in wealth management, not to provide financial services or advice.
+                  Disclaimer: CUWMC is not an investment banking group or a student-managed investment fund. As a club, we do not actively manage money on behalf of individuals or institutions. Our focus is on Private Wealth Management, which emphasizes the relationship-driven, personal side of finance alongside the technical work it rests on: portfolio construction, asset valuation, and investment management. We offer education and resources to help students with recruiting and to deepen their understanding of investment concepts. Our activities are purely educational and intended to prepare students for careers in wealth and asset management, not to provide financial services or advice.
                 </p>
               </div>
             </div>
