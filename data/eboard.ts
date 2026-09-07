@@ -46,7 +46,7 @@ export const eboardMembers: EBoardMember[] = [
     role: 'External Vice President',
     tier: 'Executive Leadership',
     description:
-      "Class of '28, Economics & Mathematics. Incoming Analyst at Bregal Investments. Former Private Equity Intern at Jerikho Investment Management.",
+      "Class of '28, Economics & Mathematics. Former Summer Analyst at Bregal Investments and Private Equity Intern at Jerikho Investment Management.",
     imagePath: '/assets/imgs/portraits/amelie_brenninkmeijer_web.jpg',
   },
   {
@@ -54,7 +54,7 @@ export const eboardMembers: EBoardMember[] = [
     role: 'Internal Vice President',
     tier: 'Executive Leadership',
     description:
-      "Class of '29, Economics and Mathematics. Incoming Wealth Intern at Morgan Stanley.",
+      "Class of '29, Economics and Mathematics. Former Wealth Intern at Morgan Stanley.",
     imagePath: '/assets/imgs/portraits/santiago_quintero_web.jpg',
   },
   {
@@ -62,7 +62,7 @@ export const eboardMembers: EBoardMember[] = [
     role: 'Treasurer',
     tier: 'Executive Leadership',
     description:
-      "Class of '29, Financial Economics. Incoming Research Analyst at Verdus Capital.",
+      "Class of '29, Financial Economics. Economic Advisor for the Office of Paul D. Wolfowitz. Former Research Analyst at Verdus Capital.",
     imagePath: '/assets/imgs/portraits/tanay_nandan_web.jpg',
   },
   {
@@ -70,7 +70,7 @@ export const eboardMembers: EBoardMember[] = [
     role: 'Secretary',
     tier: 'Executive Leadership',
     description:
-      "Class of '28, Financial Economics. Incoming Asset & Wealth Management Intern at The Rockwell Financial Group. Incoming Asset and Wealth Management Summer Analyst at J.P. Morgan.",
+      "Class of '28, Financial Economics. Former Asset & Wealth Management Intern at The Rockwell Financial Group. Incoming Asset and Wealth Management Summer Analyst at J.P. Morgan.",
     imagePath: '/assets/imgs/portraits/delfina_diotti_web.jpg',
   },
 
@@ -88,7 +88,7 @@ export const eboardMembers: EBoardMember[] = [
     role: 'Private Banking Division Co-Head',
     tier: 'Division Leadership',
     description:
-      "Class of '29, Architecture and Economics. Incoming Investment Banking Analyst Intern at Worldwide Capital Corporation.",
+      "Class of '29, Architecture and Economics. Former Investment Banking Analyst at Worldwide Capital Corporation and Valuation Analyst at ESG Real Estate Laboratory.",
     imagePath: '/assets/imgs/portraits/marco_sit_web.jpg',
   },
   {
