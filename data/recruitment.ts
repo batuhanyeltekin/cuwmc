@@ -101,8 +101,27 @@ export const COFFEE_CHAT_WINDOW = 'September 11 – 19'
  * everyone has submitted theirs.
  */
 export const coffeeChatLinks: Record<string, string> = {
-  // 'Roman Annan': 'https://calendar.app.google/xxxxxxxx',
-  // 'Sofia Torrecillas': 'https://calendar.app.google/xxxxxxxx',
+  'Roman Annan': 'https://calendar.app.google/JKk5wWiiGWC1g2v98',
+  'Sofia Torrecillas': 'https://calendar.app.google/TUCE1oL5UM59b2hR9',
+  'Amelie Brenninkmeijer': 'https://calendar.app.google/gyZ9HjTxga2jjkxk6',
+  'Santiago Quintero': 'https://calendar.app.google/aaVsN8VDvUSQkFze6',
+  'Tanay Nandan': 'https://calendar.app.google/yY3Rmww6LsrqYSta9',
+  'Delfina Diotti': 'https://calendar.app.google/LMFgiGpAJz7Sph6K6',
+  // Marco runs Calendly rather than a Google appointment schedule; his slots are
+  // 30 minutes, so the card's "Book 15 min" label under-states his own booking page.
+  'Marco Sit': 'https://calendly.com/ms7376-columbia/30-minute-meeting',
+  'Akansha Gupta': 'https://calendar.app.google/cb7FwsVgXmL5ubcB6',
+  'Charlotte Lorraine': 'https://calendar.app.google/ifbCKengeYDcTqxV6',
+
+  // Still "Booking link coming soon" (sheet as of 2026-09-08):
+  //   Eli Dubin-Ramos   — nothing submitted
+  //   Angelina Chen     — nothing submitted
+  //   Luciana Piro      — nothing submitted
+  //   Marsi Hadjieva    — HELD ON PURPOSE. She pasted
+  //     calendar.google.com/calendar/u/1?cid=<base64 of mrh2207@columbia.edu>,
+  //     which is a "subscribe to my calendar" link, not an appointment schedule.
+  //     It books nothing and would expose her calendar to applicants. Needs a real
+  //     Create → Appointment schedule → Share → Copy link URL before it ships.
 }
 
 /** Board members who are NOT taking coffee chats this cycle. */
