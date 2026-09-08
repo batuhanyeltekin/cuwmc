@@ -5,7 +5,7 @@ import { firmLogos } from '../data/logos'
 
 const stats = [
   { figure: '200+', label: 'Students reached' },
-  { figure: '40+', label: 'Active members' },
+  { figure: '45+', label: 'Active Analysts' },
   { figure: '<5%', label: 'Acceptance rate' },
   { figure: '3', label: 'Analyst divisions' },
 ]

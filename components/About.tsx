@@ -38,10 +38,13 @@ const stats = [
       'Our analysts are split into three divisions that produce research and deliver presentations, open to all Columbia students.',
   },
   {
-    figure: '9',
-    label: 'Weeks of Training',
+    // Was "9 Weeks of Training / get certified on the SIE® by FINRA®". Retired
+    // 2026-09-08: the 09-01 Refuel ruling made SIE division-led, a resource pool
+    // plus weekly office hours, not a nine-week course and not a certification.
+    figure: 'SIE®',
+    label: 'Training and Office Hours',
     detail:
-      'Nine weeks of educational programming prepare new analysts to get certified on the SIE® by FINRA® — the only such program among Columbia finance clubs.',
+      'Securities Industry Essentials exam resources and weekly office hours, run inside each division, so analysts preparing for the SIE® do it with support rather than alone.',
   },
   {
     figure: '9',
