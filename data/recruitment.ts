@@ -56,6 +56,11 @@ export const recruitmentTimeline: TimelineEvent[] = [
     detail: 'Our full overview of the club, the divisions, and the analyst experience.',
   },
   {
+    label: 'Lawn Social',
+    date: 'Wednesday, September 16',
+    detail: 'An informal social with the board, midway through the application window.',
+  },
+  {
     label: 'Applications Close',
     date: 'Saturday, September 19',
     detail: 'Submissions close at 11:59 PM.',
