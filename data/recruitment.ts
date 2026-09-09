@@ -110,18 +110,23 @@ export const coffeeChatLinks: Record<string, string> = {
   // Marco runs Calendly rather than a Google appointment schedule; his slots are
   // 30 minutes, so the card's "Book 15 min" label under-states his own booking page.
   'Marco Sit': 'https://calendly.com/ms7376-columbia/30-minute-meeting',
+  'Eli Dubin-Ramos': 'https://calendar.app.google/ygU1ufLXQC3BoViHA',
   'Akansha Gupta': 'https://calendar.app.google/cb7FwsVgXmL5ubcB6',
   'Charlotte Lorraine': 'https://calendar.app.google/ifbCKengeYDcTqxV6',
+  // Angelina's is the LONG form of the same thing — Google hands out either
+  // calendar.app.google/<id> or calendar.google.com/calendar/appointments/schedules/<id>
+  // depending on where you copy from. Both are real booking pages; the path is what
+  // identifies one, not the domain.
+  'Angelina Chen':
+    'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1inT0vYAjuPkjbgrD1nQWQGhL29glltCEtU7Q50hYGw8ay3mqe-N9BwiCSxflH_VVyJS5ir58y',
+  'Luciana Piro': 'https://calendar.app.google/fL6ffeP44LLLLbPY7',
 
-  // Still "Booking link coming soon" (sheet as of 2026-09-08):
-  //   Eli Dubin-Ramos   — nothing submitted
-  //   Angelina Chen     — nothing submitted
-  //   Luciana Piro      — nothing submitted
-  //   Marsi Hadjieva    — HELD ON PURPOSE. She pasted
-  //     calendar.google.com/calendar/u/1?cid=<base64 of mrh2207@columbia.edu>,
-  //     which is a "subscribe to my calendar" link, not an appointment schedule.
-  //     It books nothing and would expose her calendar to applicants. Needs a real
-  //     Create → Appointment schedule → Share → Copy link URL before it ships.
+  // Still "Booking link coming soon" (sheet as of 2026-09-09) — one member, unchanged:
+  //   Marsi Hadjieva — HELD ON PURPOSE, and her cell is byte-identical to 09-08. It is
+  //     calendar.google.com/calendar/u/1?cid=<base64 of mrh2207@columbia.edu>, the
+  //     "subscribe to my calendar" URL — no /appointments/schedules/ path, so it books
+  //     nothing and would hand applicants a view of her calendar instead. Needs a real
+  //     Create → Appointment schedule → Share → Copy link before it ships.
 }
 
 /** Board members who are NOT taking coffee chats this cycle. */
