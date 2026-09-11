@@ -118,20 +118,19 @@ export const coffeeChatLinks: Record<string, string> = {
   'Eli Dubin-Ramos': 'https://calendar.app.google/ygU1ufLXQC3BoViHA',
   'Akansha Gupta': 'https://calendar.app.google/cb7FwsVgXmL5ubcB6',
   'Charlotte Lorraine': 'https://calendar.app.google/ifbCKengeYDcTqxV6',
-  // Angelina's is the LONG form of the same thing — Google hands out either
+  // Marsi's and Angelina's are the LONG form of the same thing — Google hands out either
   // calendar.app.google/<id> or calendar.google.com/calendar/appointments/schedules/<id>
   // depending on where you copy from. Both are real booking pages; the path is what
   // identifies one, not the domain.
+  'Marsi Hadjieva':
+    'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0v8efyT0gjH4G9PtiW_aVBSyEo8FijAxhK2xHiasIjkPzu0u30bWMg315KGFRsDu9azvgcx7LZ',
   'Angelina Chen':
     'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1inT0vYAjuPkjbgrD1nQWQGhL29glltCEtU7Q50hYGw8ay3mqe-N9BwiCSxflH_VVyJS5ir58y',
   'Luciana Piro': 'https://calendar.app.google/fL6ffeP44LLLLbPY7',
 
-  // Still "Booking link coming soon" (sheet as of 2026-09-09) — one member, unchanged:
-  //   Marsi Hadjieva — HELD ON PURPOSE, and her cell is byte-identical to 09-08. It is
-  //     calendar.google.com/calendar/u/1?cid=<base64 of mrh2207@columbia.edu>, the
-  //     "subscribe to my calendar" URL — no /appointments/schedules/ path, so it books
-  //     nothing and would hand applicants a view of her calendar instead. Needs a real
-  //     Create → Appointment schedule → Share → Copy link before it ships.
+  // All 13 board members are wired (2026-09-10). Marsi's first submission was a
+  // calendar.google.com/calendar/u/1?cid=<...> "subscribe to my calendar" URL with no
+  // /appointments/schedules/ path, so it was held out until the real schedule link arrived.
 }
 
 /** Board members who are NOT taking coffee chats this cycle. */
