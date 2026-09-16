@@ -118,20 +118,20 @@ export const coffeeChatLinks: Record<string, string> = {
   'Eli Dubin-Ramos': 'https://calendar.app.google/ygU1ufLXQC3BoViHA',
   'Akansha Gupta': 'https://calendar.app.google/cb7FwsVgXmL5ubcB6',
   'Charlotte Lorraine': 'https://calendar.app.google/ifbCKengeYDcTqxV6',
-  // Marsi's and Angelina's are the LONG form of the same thing — Google hands out either
+  // Angelina's is the LONG form of the same thing — Google hands out either
   // calendar.app.google/<id> or calendar.google.com/calendar/appointments/schedules/<id>
   // depending on where you copy from. Both are real booking pages; the path is what
   // identifies one, not the domain.
-  'Marsi Hadjieva':
-    'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0v8efyT0gjH4G9PtiW_aVBSyEo8FijAxhK2xHiasIjkPzu0u30bWMg315KGFRsDu9azvgcx7LZ',
   'Angelina Chen':
     'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1inT0vYAjuPkjbgrD1nQWQGhL29glltCEtU7Q50hYGw8ay3mqe-N9BwiCSxflH_VVyJS5ir58y',
   'Luciana Piro': 'https://calendar.app.google/fL6ffeP44LLLLbPY7',
 
-  // All 13 board members are wired (2026-09-10). Marsi's first submission was a
-  // calendar.google.com/calendar/u/1?cid=<...> "subscribe to my calendar" URL with no
-  // /appointments/schedules/ path, so it was held out until the real schedule link arrived.
+  // Marsi's link was switched off on 2026-09-16 at her request. Her URL is removed, not just
+  // hidden: this whole map ships in the client bundle. It is in git history at dc6629d.
 }
 
 /** Board members who are NOT taking coffee chats this cycle. */
-export const coffeeChatExcluded: string[] = []
+export const coffeeChatExcluded: string[] = [
+  // Asked to be taken off the booking page, 2026-09-16.
+  'Marsi Hadjieva',
+]
