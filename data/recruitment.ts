@@ -48,7 +48,8 @@ export const recruitmentTimeline: TimelineEvent[] = [
   {
     label: 'Coffee Chats',
     date: 'Friday, September 11 – Saturday, September 19',
-    detail: 'Optional 15-minute chats with the Executive Board. Maximum of two per applicant.',
+    detail:
+      'Optional 15-minute chats with the Executive Board. Booking has now closed — applications are still open until Saturday.',
   },
   {
     label: 'Information Session',
@@ -98,37 +99,44 @@ export const COFFEE_CHAT_MAX_PER_APPLICANT = 2
 export const COFFEE_CHAT_WINDOW = 'September 11 – 19'
 
 /**
+ * The master switch for coffee-chat booking.
+ *
+ * `false` → every card renders a plain "Booking closed" state and the section says so at
+ * the top. No `<a href>` is emitted anywhere in the grid.
+ *
+ * ⚠️  Flipping this back to `true` is NOT enough to reopen booking — `coffeeChatLinks`
+ *     below was emptied at the same time (see the note there). Both have to come back.
+ */
+export const COFFEE_CHATS_OPEN = false
+
+/** Shown in place of the booking cap once booking has closed. */
+export const COFFEE_CHAT_CLOSED_NOTICE =
+  'Coffee chats for Fall ’26 recruitment have closed. Thank you to everyone who came out to meet the board.'
+
+/**
  * Booking links, keyed by the member's `name` in data/eboard.ts (exact match).
  *
- * Each board member creates their own Google Calendar appointment schedule and
- * pastes their booking-page URL here. A member with no entry (or an empty string)
- * renders as "Booking link coming soon" — so the page is safe to ship before
- * everyone has submitted theirs.
+ * Each board member creates their own Google Calendar appointment schedule and pastes their
+ * booking-page URL here. A member with no entry renders as "Booking link coming soon" while
+ * `COFFEE_CHATS_OPEN` is true — so the page is safe to ship before everyone has submitted.
+ *
+ * ── EMPTIED 2026-09-17, on Roman's ruling: all booking links off, immediately. ──────────
+ * The twelve live URLs were DELETED rather than left here behind a `false` flag, because
+ * this entire map ships inside the client JS bundle — a hidden button is cosmetic, a deleted
+ * URL is not. Same treatment Marsi's link got on 09-16.
+ *
+ * Recovery, if a future cycle needs them:
+ *   • the vault runbook, `04_Extracurricular/CUWMC/coffee-chat-setup-fall-2026.md`
+ *     ("ARCHIVED — the twelve live booking links"), which is the readable copy; or
+ *   • `git show 9ac6705:data/recruitment.ts` (Marsi's, one further back at dc6629d).
+ * Re-collect from the board rather than re-pasting: these are personal scheduling pages and
+ * any member may have repointed or deleted theirs since.
+ *
+ * Note what this does and does not do. It stops NEW bookings from the website. It does not
+ * cancel chats already booked, and it does not close each member's own appointment-schedule
+ * window — a link from a DM or from git history still books a slot.
  */
-export const coffeeChatLinks: Record<string, string> = {
-  'Roman Annan': 'https://calendar.app.google/JKk5wWiiGWC1g2v98',
-  'Sofia Torrecillas': 'https://calendar.app.google/TUCE1oL5UM59b2hR9',
-  'Amelie Brenninkmeijer': 'https://calendar.app.google/gyZ9HjTxga2jjkxk6',
-  'Santiago Quintero': 'https://calendar.app.google/aaVsN8VDvUSQkFze6',
-  'Tanay Nandan': 'https://calendar.app.google/yY3Rmww6LsrqYSta9',
-  'Delfina Diotti': 'https://calendar.app.google/LMFgiGpAJz7Sph6K6',
-  // Marco runs Calendly rather than a Google appointment schedule; his slots are
-  // 30 minutes, so the card's "Book 15 min" label under-states his own booking page.
-  'Marco Sit': 'https://calendly.com/ms7376-columbia/30-minute-meeting',
-  'Eli Dubin-Ramos': 'https://calendar.app.google/ygU1ufLXQC3BoViHA',
-  'Akansha Gupta': 'https://calendar.app.google/cb7FwsVgXmL5ubcB6',
-  'Charlotte Lorraine': 'https://calendar.app.google/ifbCKengeYDcTqxV6',
-  // Angelina's is the LONG form of the same thing — Google hands out either
-  // calendar.app.google/<id> or calendar.google.com/calendar/appointments/schedules/<id>
-  // depending on where you copy from. Both are real booking pages; the path is what
-  // identifies one, not the domain.
-  'Angelina Chen':
-    'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1inT0vYAjuPkjbgrD1nQWQGhL29glltCEtU7Q50hYGw8ay3mqe-N9BwiCSxflH_VVyJS5ir58y',
-  'Luciana Piro': 'https://calendar.app.google/fL6ffeP44LLLLbPY7',
-
-  // Marsi's link was switched off on 2026-09-16 at her request. Her URL is removed, not just
-  // hidden: this whole map ships in the client bundle. It is in git history at dc6629d.
-}
+export const coffeeChatLinks: Record<string, string> = {}
 
 /** Board members who are NOT taking coffee chats this cycle. */
 export const coffeeChatExcluded: string[] = [

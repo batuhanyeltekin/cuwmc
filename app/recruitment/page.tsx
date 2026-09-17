@@ -28,7 +28,7 @@ export default function RecruitmentPage() {
                 <ApplicationButton />
 
                 <p className="text-lg text-gray-700 leading-relaxed font-garamond mb-6">
-                  We’re excited to potentially welcome you to our team and support your journey in wealth management. Attend our events below and submit your application by the deadline. Feel free to also sign up for a coffee chat with one of our current executive board members.
+                  We’re excited to potentially welcome you to our team and support your journey in wealth management. Attend our events below and submit your application by the deadline. Coffee-chat booking has now closed — a chat was never required to apply, so please still send us your application.
                 </p>
                 
                 <p className="text-sm text-gray-600 italic leading-relaxed font-garamond">

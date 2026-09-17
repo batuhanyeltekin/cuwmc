@@ -35,7 +35,7 @@ export default function Hero() {
           >
             <Link
               href="/recruitment"
-              aria-label="Fall 2026 Recruitment — timeline, coffee chats, and application"
+              aria-label="Fall 2026 Recruitment — timeline and application"
               className="inline-block rounded-full border-2 border-cuwmc-secondary bg-cuwmc-secondary px-8 py-4 font-garamond text-lg font-semibold text-cuwmc-primary shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-transparent hover:text-cuwmc-secondary hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
             >
               Fall 2026 Recruitment

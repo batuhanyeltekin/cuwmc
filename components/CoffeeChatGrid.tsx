@@ -5,6 +5,8 @@ import { eboardMembers } from '../data/eboard'
 import {
   coffeeChatLinks,
   coffeeChatExcluded,
+  COFFEE_CHATS_OPEN,
+  COFFEE_CHAT_CLOSED_NOTICE,
   COFFEE_CHAT_MAX_PER_APPLICANT,
   COFFEE_CHAT_WINDOW,
 } from '../data/recruitment'
@@ -30,26 +32,38 @@ export default function CoffeeChatGrid() {
             Coffee Chats
           </h2>
           <div className="mx-auto h-1 w-20 bg-cuwmc-secondary" />
-          <p className="mx-auto mt-6 max-w-2xl font-garamond text-lg leading-relaxed text-gray-700">
-            Book an optional 15-minute chat with a member of the Executive Board
-            between <span className="font-semibold">{COFFEE_CHAT_WINDOW}</span>. Coffee
-            chats are in person wherever possible, and they are not required to apply —
-            they are simply a chance to ask us anything about the club before you do.
-          </p>
+          {COFFEE_CHATS_OPEN ? (
+            <>
+              <p className="mx-auto mt-6 max-w-2xl font-garamond text-lg leading-relaxed text-gray-700">
+                Book an optional 15-minute chat with a member of the Executive Board
+                between <span className="font-semibold">{COFFEE_CHAT_WINDOW}</span>. Coffee
+                chats are in person wherever possible, and they are not required to apply —
+                they are simply a chance to ask us anything about the club before you do.
+              </p>
 
-          {/* The cap — stated plainly, not buried */}
-          <p className="mx-auto mt-5 max-w-2xl rounded-lg border border-cuwmc-accent/30 bg-cuwmc-secondary/10 px-5 py-3 font-garamond text-base text-cuwmc-primary">
-            <span className="font-semibold">
-              Please book no more than {COFFEE_CHAT_MAX_PER_APPLICANT} coffee chats
-              in total.
-            </span>{' '}
-            Slots are limited and we want to speak with as many of you as we can.
-          </p>
+              {/* The cap — stated plainly, not buried */}
+              <p className="mx-auto mt-5 max-w-2xl rounded-lg border border-cuwmc-accent/30 bg-cuwmc-secondary/10 px-5 py-3 font-garamond text-base text-cuwmc-primary">
+                <span className="font-semibold">
+                  Please book no more than {COFFEE_CHAT_MAX_PER_APPLICANT} coffee chats
+                  in total.
+                </span>{' '}
+                Slots are limited and we want to speak with as many of you as we can.
+              </p>
+            </>
+          ) : (
+            <p className="mx-auto mt-6 max-w-2xl rounded-lg border border-cuwmc-accent/30 bg-cuwmc-secondary/10 px-5 py-3 font-garamond text-base leading-relaxed text-cuwmc-primary">
+              <span className="font-semibold">{COFFEE_CHAT_CLOSED_NOTICE}</span>{' '}
+              Applications are still open until Saturday, September 19 at 11:59 PM — a coffee
+              chat was never required to apply.
+            </p>
+          )}
         </div>
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {members.map((member) => {
-            const url = coffeeChatLinks[member.name]
+            // Once booking is closed no href is emitted at all — not a disabled-looking
+            // anchor, no link in the markup.
+            const url = COFFEE_CHATS_OPEN ? coffeeChatLinks[member.name] : undefined
             return (
               <div
                 key={member.name}
@@ -91,8 +105,9 @@ export default function CoffeeChatGrid() {
                       <span className="sr-only"> with {member.name}</span>
                     </a>
                   ) : (
-                    <span className="inline-block rounded-md border border-dashed border-gray-300 px-4 py-2 font-garamond text-sm text-gray-500">
-                      Booking link coming soon
+                    <span className="inline-block rounded-md border border-dashed border-gray-300 px-4 py-2 font-garamond text-sm text-gray-600">
+                      {COFFEE_CHATS_OPEN ? 'Booking link coming soon' : 'Booking closed'}
+                      <span className="sr-only"> — {member.name}</span>
                     </span>
                   )}
                 </div>
