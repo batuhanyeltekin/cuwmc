@@ -28,6 +28,27 @@ export const APPLICATION_OPENS_AT = '2026-09-08T00:00:00-04:00'
 /** Shown under the application button while it is still locked. */
 export const APPLICATION_PENDING_LABEL = 'Opens Tuesday, September 8'
 
+/**
+ * Applications closed Sat 19 Sep, 11:59 PM. `true` → the button renders a closed state and
+ * no href. Like the opening gate this is courtesy only: the real gate is the Google Form's
+ * "Accepting responses" toggle.
+ */
+export const APPLICATIONS_CLOSED = true
+
+/** Shown under the closed application button. */
+export const APPLICATION_CLOSED_LABEL = 'Applications closed Saturday, September 19'
+
+/**
+ * Status paragraph at the top of the recruitment page (the hero uses the short form below).
+ * Updated 2026-09-27 on Santi's ask: IMD finishes after Tuesday's stock pitches, offers go
+ * out by Wednesday the 30th, and the first All-Hands moved to Sunday, October 4.
+ */
+export const RECRUITMENT_STATUS =
+  'Fall ’26 applications are closed. Thank you to everyone who applied. Investment Management stock pitches take place Tuesday, September 29, and all decisions will be sent by Wednesday, September 30.'
+
+/** Short form for the homepage hero. */
+export const RECRUITMENT_STATUS_SHORT = 'Applications closed · decisions by Wednesday, September 30'
+
 export interface TimelineEvent {
   label: string
   date: string
@@ -49,7 +70,7 @@ export const recruitmentTimeline: TimelineEvent[] = [
     label: 'Coffee Chats',
     date: 'Friday, September 11 – Saturday, September 19',
     detail:
-      'Optional 15-minute chats with the Executive Board. Booking has now closed — applications are still open until Saturday.',
+      'Optional 15-minute chats with the Executive Board.',
   },
   {
     label: 'Information Session',
@@ -77,17 +98,18 @@ export const recruitmentTimeline: TimelineEvent[] = [
   },
   {
     label: 'IMD Stock Pitch Day',
-    date: 'Week of September 22',
+    date: 'Tuesday, September 29',
     detail: 'Investment Management applicants only.',
   },
   {
     label: 'Deliberations + Offers Sent',
-    date: 'Saturday, September 26',
+    date: 'By Wednesday, September 30',
+    detail: 'Investment Management decisions follow Tuesday’s stock pitches.',
   },
   {
     label: 'New Analyst Onboarding',
-    date: 'Sunday, September 27',
-    detail: 'First All-Hands of the semester.',
+    date: 'Sunday, October 4',
+    detail: 'First All-Hands of the semester. Time and room to be announced.',
   },
 ]
 

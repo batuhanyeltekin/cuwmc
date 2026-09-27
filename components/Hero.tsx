@@ -3,6 +3,8 @@
 import React from 'react'
 import Link from 'next/link'
 
+import { RECRUITMENT_STATUS_SHORT } from '../data/recruitment'
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -41,7 +43,7 @@ export default function Hero() {
               Fall 2026 Recruitment
             </Link>
             <p className="font-garamond text-sm text-gray-200">
-              Applications open Tuesday, September 8
+              {RECRUITMENT_STATUS_SHORT}
             </p>
           </div>
         </div>

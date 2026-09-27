@@ -52,9 +52,7 @@ export default function CoffeeChatGrid() {
             </>
           ) : (
             <p className="mx-auto mt-6 max-w-2xl rounded-lg border border-cuwmc-accent/30 bg-cuwmc-secondary/10 px-5 py-3 font-garamond text-base leading-relaxed text-cuwmc-primary">
-              <span className="font-semibold">{COFFEE_CHAT_CLOSED_NOTICE}</span>{' '}
-              Applications are still open until Saturday, September 19 at 11:59 PM — a coffee
-              chat was never required to apply.
+              <span className="font-semibold">{COFFEE_CHAT_CLOSED_NOTICE}</span>
             </p>
           )}
         </div>

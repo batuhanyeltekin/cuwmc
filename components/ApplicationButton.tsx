@@ -5,6 +5,8 @@ import {
   APPLICATION_URL,
   APPLICATION_OPENS_AT,
   APPLICATION_PENDING_LABEL,
+  APPLICATIONS_CLOSED,
+  APPLICATION_CLOSED_LABEL,
 } from '../data/recruitment'
 
 /**
@@ -25,6 +27,22 @@ export default function ApplicationButton() {
     const id = setInterval(check, 30_000)
     return () => clearInterval(id)
   }, [])
+
+  if (APPLICATIONS_CLOSED) {
+    return (
+      <div className="mb-8">
+        <span
+          aria-disabled="true"
+          className="inline-block cursor-not-allowed rounded-lg border-2 border-cuwmc-primary/30 bg-cuwmc-primary/10 px-8 py-4 font-garamond text-lg font-semibold text-cuwmc-primary/50"
+        >
+          Applications Closed
+        </span>
+        <p className="mt-3 font-garamond text-sm text-gray-500">
+          {APPLICATION_CLOSED_LABEL}
+        </p>
+      </div>
+    )
+  }
 
   if (APPLICATION_URL && unlocked) {
     return (
