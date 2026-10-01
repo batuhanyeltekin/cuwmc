@@ -153,7 +153,7 @@ export default function About() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading title="Partners" className="mb-16" />
 
-          <div className="flex items-center justify-center gap-16 md:gap-24">
+          <div className="flex flex-wrap items-center justify-center gap-x-16 gap-y-12 md:gap-x-24">
             <img
               src="/assets/imgs/company_logos/BlackRock_wordmark.svg.png"
               alt="BlackRock"
@@ -163,6 +163,11 @@ export default function About() {
               src="/assets/imgs/company_logos/pwm_official_partner.PNG"
               alt="PWM Official Partner"
               className="h-24 w-auto object-contain grayscale transition-all duration-300 hover:grayscale-0 md:h-32"
+            />
+            <img
+              src="/assets/imgs/company_logos/cfa-society-new-york.svg"
+              alt="CFA Society New York"
+              className="h-14 w-auto object-contain grayscale transition-all duration-300 hover:grayscale-0 md:h-20"
             />
           </div>
         </div>
