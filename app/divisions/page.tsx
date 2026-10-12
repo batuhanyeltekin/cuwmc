@@ -6,6 +6,31 @@ import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import PresentationCarousel from '../../components/PresentationCarousel'
 
+// Fall 2026 class photos (Low Library steps, October 2026). The division → photo
+// mapping lives here only; swap the file names if a division is on the wrong photo.
+const CLASS_PHOTO_DIR = '/assets/imgs/analyst-class'
+const DIVISION_PHOTOS = {
+  imd: `${CLASS_PHOTO_DIR}/fall-2026-group-7625.jpg`,
+  pbd: `${CLASS_PHOTO_DIR}/fall-2026-group-7636.jpg`,
+  fpd: `${CLASS_PHOTO_DIR}/fall-2026-group-7631.jpg`,
+}
+
+function DivisionPhoto({ src, division }: { src: string; division: string }) {
+  return (
+    <figure className="mt-12 max-w-4xl mx-auto">
+      <img
+        src={src}
+        alt={`Fall 2026 ${division} analysts on the steps of Low Library`}
+        loading="lazy"
+        className="w-full aspect-[4/3] object-cover rounded-2xl shadow-lg"
+      />
+      <figcaption className="mt-4 text-center text-base text-gray-600 font-garamond">
+        Fall 2026 {division} Analysts
+      </figcaption>
+    </figure>
+  )
+}
+
 export default function DivisionsPage() {
   return (
     <main className="min-h-screen">
@@ -48,6 +73,7 @@ export default function DivisionsPage() {
                 </button> */}
               </div>
             </div>
+            <DivisionPhoto src={DIVISION_PHOTOS.imd} division="Investment Management Division" />
           </div>
 
           {/* Private Banking Division */}
@@ -72,6 +98,7 @@ export default function DivisionsPage() {
                 />
               </div>
             </div>
+            <DivisionPhoto src={DIVISION_PHOTOS.pbd} division="Private Banking Division" />
           </div>
 
           {/* Financial Planning Division */}
@@ -96,6 +123,23 @@ export default function DivisionsPage() {
                 </button> */}
               </div>
             </div>
+            <DivisionPhoto src={DIVISION_PHOTOS.fpd} division="Financial Planning Division" />
+          </div>
+
+          {/* Current analyst class */}
+          <div className="mb-20">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl md:text-4xl font-bold text-cuwmc-primary mb-4 font-garamond">
+                Fall 2026 New Analyst Class
+              </h2>
+              <div className="w-20 h-1 bg-cuwmc-secondary mx-auto"></div>
+            </div>
+            <img
+              src={`${CLASS_PHOTO_DIR}/fall-2026-new-analysts.jpg`}
+              alt="The Fall 2026 new analyst class on the steps of Low Library"
+              loading="lazy"
+              className="w-full max-w-5xl mx-auto aspect-[3/2] object-cover rounded-2xl shadow-lg"
+            />
           </div>
 
           {/* Call to Action */}
