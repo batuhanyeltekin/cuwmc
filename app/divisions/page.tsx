@@ -11,19 +11,21 @@ import PresentationCarousel from '../../components/PresentationCarousel'
 const CLASS_PHOTO_DIR = '/assets/imgs/analyst-class'
 // Names come from the "CUWMC 2026-2027 Roster" sheet (IMD / PBD / FPD tabs), read 2026-10-12,
 // with spellings checked against each analyst's own form entries. `pictured` = the people in
-// that division's photo (new analysts, plus the three who moved into IMD). `notPictured` =
+// that division's photo (new analysts; in IMD also the three who moved in and one returning). `notPictured` =
 // returning analysts, listed under the class photo. Edit here when the roster changes.
 const DIVISIONS = {
   imd: {
     name: 'Investment Management Division',
     short: 'IMD',
+    label: 'IMD analysts, Fall 2026',
     photo: `${CLASS_PHOTO_DIR}/fall-2026-group-7625.jpg`,
-    pictured: ['Nakul Balaji', 'Aadya Kothari', 'Ishan Rekhi', 'Izzy Esses', 'Anna Genov', 'Joshua Turner', 'Sidharth Sharma', 'Chris Choi', 'Maitree Mody', 'Prim Atikarnbodee', 'Isabella Toledo'],
-    notPictured: ['Catherine Liu', 'Fiona Hu', 'Jeffrey Kim', 'Krish Lambah', 'Milan Agarwala', 'Pranay Mahindrakar'],
+    pictured: ['Nakul Balaji', 'Aadya Kothari', 'Ishan Rekhi', 'Anna Genov', 'Joshua Turner', 'Sidharth Sharma', 'Chris Choi', 'Maitree Mody', 'Prim Atikarnbodee', 'Isabella Toledo', 'Pranay Mahindrakar'],
+    notPictured: ['Catherine Liu', 'Fiona Hu', 'Jeffrey Kim', 'Krish Lambah', 'Milan Agarwala', 'Izzy Esses'],
   },
   pbd: {
     name: 'Private Banking Division',
     short: 'PBD',
+    label: 'New to PBD, Fall 2026',
     photo: `${CLASS_PHOTO_DIR}/fall-2026-group-7636.jpg`,
     pictured: ['Orinthia Burgher', 'Anusha Sharma', 'Ezo Arinc', 'Maximillian Williams', 'Iris Wang', 'Mario Gianni Garcia'],
     notPictured: ['Daniel Kim', 'Yianni Goulandris', 'Leo Munasinghe', 'Madeleine Detray', 'Maria Beka', 'Mila Ansorge', 'Derek Qian', 'Aidan Rodgers', 'Isabella Mendez', 'Isabella Cohen', 'Angela Qin'],
@@ -31,6 +33,7 @@ const DIVISIONS = {
   fpd: {
     name: 'Financial Planning Division',
     short: 'FPD',
+    label: 'New to FPD, Fall 2026',
     photo: `${CLASS_PHOTO_DIR}/fall-2026-group-7631.jpg`,
     pictured: ['Liora Mester', 'Claire Kim', 'Grazia Hottenrott', 'Raffaella Mauro', 'Rita Bennani', 'Cristina Arias', 'Dara Popkoleva', 'Kaitlyn Chao', 'Anibal Segovia', 'Hugo Bueno'],
     notPictured: ['Leonardo Rafael Moreno', 'Claire Lee'],
@@ -38,20 +41,20 @@ const DIVISIONS = {
 }
 
 function DivisionPhoto({ division }: { division: keyof typeof DIVISIONS }) {
-  const { name, short, photo, pictured } = DIVISIONS[division]
+  const { name, label, photo, pictured } = DIVISIONS[division]
   return (
     <figure className="mt-2 max-w-xs">
       <div className="p-1.5 bg-white border border-cuwmc-accent/50 rounded-xl shadow-md">
         <img
           src={photo}
-          alt={`Analysts new to the ${name} in Fall 2026, on the steps of Low Library`}
+          alt={`${name} analysts, Fall 2026, on the steps of Low Library`}
           loading="lazy"
           className="w-full aspect-[4/3] object-cover rounded-lg"
         />
       </div>
       <figcaption className="mt-3 text-base text-gray-600 font-garamond leading-snug">
         <span className="block font-semibold text-cuwmc-primary uppercase tracking-wider text-[15px] mb-1">
-          New to {short}, Fall 2026
+          {label}
         </span>
         <span className="italic">Pictured:</span> {pictured.join(', ')}.
       </figcaption>
@@ -169,7 +172,7 @@ export default function DivisionsPage() {
               className="w-full max-w-5xl mx-auto aspect-[3/2] object-cover rounded-2xl shadow-lg border-4 border-white ring-1 ring-cuwmc-accent/50"
             />
             <p className="mt-5 text-center text-base text-gray-600 font-garamond italic">
-              The 24 analysts who joined CUWMC in Fall 2026, across all three divisions.
+              Analysts who joined CUWMC in Fall 2026, across all three divisions.
             </p>
 
             <div className="mt-12 max-w-5xl mx-auto border-t border-cuwmc-accent/30 pt-8">
